@@ -13,19 +13,19 @@ OneBot Expand 插件提供 **23 个 Service 组件**，按功能域聚合，供�
 | NapcatExtService | napcat_ext | 15 | NapCat 状态/Cookies/CSRF/精华/版本 | [查看](./napcat-ext-service) |
 | EmojiService | emoji | 6 | QQNT 表情表查询 | [查看](./emoji-service) |
 | PathMapperService | path_mapper | 5 | 文件路径映射 | [查看](./pathmapper-service) |
-| GroupFileService | group_file | 12 | 群文件 CRUD/文件夹/转存/重命名 | [查看](./group-file-service) |
+| GroupFileService | group_file | 13 | 群文件 CRUD/文件夹/转存/重命名 | [查看](./group-file-service) |
 | GroupNoticeService | group_notice | 3 | 群公告 | [查看](./group-notice-service) |
-| GroupExtService | group_ext | 12 | 群头像/备注/加群选项/签到/打卡 | [查看](./group-ext-service) |
+| GroupExtService | group_ext | 14 | 群头像/备注/加群选项/签到/打卡 | [查看](./group-ext-service) |
 | RequestService | request | 5 | 好友/加群请求处理 | [查看](./request-service) |
-| UserExtService | user_ext | 9 | 好友备注/分类/单向好友/资料/头像 | [查看](./user-ext-service) |
+| UserExtService | user_ext | 13 | 好友备注/分类/单向好友/资料/头像 | [查看](./user-ext-service) |
 | StatusService | status | 4 | 在线状态/DIY状态/输入状态 | [查看](./status-service) |
 | PokeService | poke | 2 | 戳一拍 | [查看](./poke-service) |
-| EmojiExtService | emoji_ext | 10 | 收藏表情CRUD/详情/备注/移动/回应 | [查看](./emoji-ext-service) |
+| EmojiExtService | emoji_ext | 12 | 收藏表情CRUD/详情/备注/移动/回应 | [查看](./emoji-ext-service) |
 | AiVoiceService | ai_voice | 3 | AI角色/语音生成 | [查看](./ai-voice-service) |
 | CredService | cred | 8 | clientkey/credentials/rkey/URL安全/OCR/下载/解密 | [查看](./cred-service) |
-| MiscService | misc | 12 | 机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词 | [查看](./misc-service) |
-| FlashService | flash | 11 | 闪传任务/消息/文件列表/URL/分享/下载/文件集CRUD | [查看](./flash-service) |
-| GroupAlbumService | group_album | 7 | 群相册列表/上传/评论/点赞/删除 | [查看](./group-album-service) |
+| MiscService | misc | 18 | 机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词 | [查看](./misc-service) |
+| FlashService | flash | 14 | 闪传任务/消息/文件列表/URL/分享/下载/文件集CRUD | [查看](./flash-service) |
+| GroupAlbumService | group_album | 9 | 群相册列表/上传/评论/点赞/删除 | [查看](./group-album-service) |
 | GroupTodoService | group_todo | 3 | 群待办设置/完成/取消 | [查看](./group-todo-service) |
 | QzoneService | qzone | 9 | 说说列表/动态/发表/删除/点赞/评论/拉黑/权限 | [查看](./qzone-service) |
 | ArkService | ark | 4 | 用户/群Ark卡片分享 | [查看](./ark-service) |
@@ -77,5 +77,5 @@ await msg_service.send_group_msg(
 
 ## 下一步
 
-- [API 文档](../api/) — 浏览全部 185 个 API
+- [API 文档](../api/) — 浏览全部 205 个 API
 - [架构设计](../guide/architecture) — 了解 Tool/Service 双层设计

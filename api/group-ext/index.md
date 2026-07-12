@@ -1,6 +1,6 @@
 # 群管理扩展 API
 
-本分类包含 12 个群管理扩展 API，涵盖群头像/备注/加群选项/签到/打卡列表等功能。
+本分类包含 14 个群管理扩展 API，涵盖群头像/备注/加群选项/签到/打卡列表等功能。
 
 ## API 列表
 
@@ -18,3 +18,5 @@
 | [`get_group_info_ex`](./get-group-info-ex) | 获取群额外信息 | Expand | ✓ | ✓ |
 | [`set_group_sign`](./set-group-sign) | 群签到 | Expand | ✓ | ✗ |
 | [`get_group_signed_list`](./get-group-signed-list) | 获取群签到列表 | Expand | ✓ | ✓ |
+| [`batch_delete_group_member`](./batch-delete-group-member) | 批量踢出群成员 | LLBot | ✓ | ✗ |
+| [`set_group_msg_mask`](./set-group-msg-mask) | 设置群消息屏蔽 | LLBot | ✓ | ✗ |

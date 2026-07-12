@@ -1,6 +1,6 @@
 # 群相册 API
 
-本分类包含 7 个群相册 API，涵盖群相册列表/上传/评论/点赞/删除等功能。
+本分类包含 9 个群相册 API，涵盖群相册列表/上传/评论/点赞/删除等功能。
 
 ## API 列表
 
@@ -13,3 +13,5 @@
 | [`set_group_album_media_like`](./set-group-album-media-like) | 群相册点赞 | Expand | ✓ | ✓ |
 | [`cancel_group_album_media_like`](./cancel-group-album-media-like) | 取消群相册点赞 | Expand | ✓ | ✓ |
 | [`del_group_album_media`](./del-group-album-media) | 删除群相册媒体 | Expand | ✓ | ✓ |
+| [`create_group_album`](./create-group-album) | 创建群相册 | LLBot | ✓ | ✗ |
+| [`delete_group_album`](./delete-group-album) | 删除群相册 | LLBot | ✓ | ✗ |

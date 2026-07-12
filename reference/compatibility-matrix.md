@@ -1,6 +1,6 @@
 # 完整兼容性矩阵
 
-下表列出 OneBot Expand 插件全部 185 个 API 在 OneBot v11 / NapCat / SnowLuma 三方的兼容性。
+下表列出 OneBot Expand 插件全部 205 个 API 在 OneBot v11 / NapCat / SnowLuma 三方的兼容性。
 
 ## 图例
 
@@ -120,6 +120,7 @@
 | `rename_group_file_folder` | 重命名群文件夹 | ❌ | ✅ | ✅ |
 | `trans_group_file` | 转存群文件 | ❌ | ✅ | ✅ |
 | `get_private_file_url` | 私聊文件链接 | ❌ | ✅ | ✅ |
+| `set_group_file_forever` | 设置群文件永久保存 | ❌ | ✅ | ❌ |
 
 ## 群公告 (group_notice)
 
@@ -145,6 +146,8 @@
 | `get_group_info_ex` | 群信息扩展 | ❌ | ✅ | ✅ |
 | `set_group_sign` | 群签到 | ❌ | ✅ | ✅ |
 | `get_group_signed_list` | 今日打卡列表 | ❌ | ✅ | ✅ |
+| `batch_delete_group_member` | 批量踢出群成员 | ❌ | ✅ | ❌ |
+| `set_group_msg_mask` | 设置群消息屏蔽 | ❌ | ✅ | ❌ |
 
 ## 请求处理 (request)
 
@@ -166,7 +169,11 @@
 | `get_unidirectional_friend_list` | 单向好友列表 | ❌ | ✅ | ✅ |
 | `set_qq_profile` | 设置QQ资料 | ❌ | ✅ | ✅ |
 | `set_qq_avatar` | 设置QQ头像 | ❌ | ✅ | ✅ |
-| `set_self_longnick` | 设置个性签名 | ❌ | ✅ | ✅ |
+| `set_self_longnick` | 设置个性签名 | ❌ | ✅ | 
+| `get_profile_like_me` | 获取自身被点赞列表 | ❌ | ✅ | ❌ |
+| `get_profile_like_count` | 获取用户点赞总数 | ❌ | ✅ | ❌ |
+| `get_qq_avatar` | 获取QQ头像URL | ❌ | ✅ | ❌ |
+| `set_friend_category` | 设置好友分类 | ❌ | ✅ | ❌ |✅ |
 | `get_recent_contact` | 最近联系人 | ❌ | ✅ | ✅ |
 | `get_profile_like` | 资料点赞 | ❌ | ✅ | ✅ |
 
@@ -196,6 +203,8 @@
 | `delete_custom_face` | 删除收藏表情 | ❌ | ✅ | ✅ |
 | `set_custom_face_desc` | 修改表情描述 | ❌ | 🔶 | ❌ |
 | `modify_custom_face` | 修改表情备注 | ❌ | ✅ | ✅ |
+| `get_recommend_face` | 获取推荐表情 | ❌ | ✅ | ❌ |
+| `unset_msg_emoji_like` | 取消消息表情回应 | ❌ | ✅ | ❌ |
 | `move_custom_face_to_front` | 表情移到最前 | ❌ | ✅ | ✅ |
 | `fetch_emoji_like` | 表情回应分页 | ❌ | ✅ | ✅ |
 | `get_emoji_likes` | 表情回应用户 | ❌ | ✅ | ✅ |
@@ -238,6 +247,12 @@
 | `send_packet` | 发送SSO包 | ❌ | ✅ | ✅ |
 | `handle_quick_operation` | 快速操作 | ❌ | ✅ | ✅ |
 | `get_word_slices` | 分词 | ❌ | 🔶 | ❌ |
+| `get_config` | 获取协议端配置 | ❌ | ✅ | ❌ |
+| `set_config` | 设置协议端配置 | ❌ | ✅ | ❌ |
+| `get_event` | 获取事件 | ❌ | ✅ | ❌ |
+| `llonebot_debug` | 调试接口 | ❌ | ✅ | ❌ |
+| `scan_qrcode` | 扫码登录 | ❌ | ✅ | ❌ |
+| `get_guild_list` | 获取频道列表 | ❌ | ✅ | ❌ |
 
 ## 闪传 (flash)
 
@@ -254,6 +269,9 @@
 | `list_filesets` | 列出文件集 | ❌ | ✅ | ✅ |
 | `delete_flash_file` | 删除闪传文件 | ❌ | ✅ | ✅ |
 | `rename_flash_file` | 重命名闪传文件 | ❌ | ✅ | ✅ |
+| `get_flash_file_download_urls` | 获取闪传文件下载URL | ❌ | ✅ | ❌ |
+| `upload_flash_file` | 上传闪传文件 | ❌ | ✅ | ❌ |
+| `reshare_flash_file` | 重新分享闪传文件 | ❌ | ✅ | ❌ |
 
 ## 群相册 (group_album)
 
@@ -266,6 +284,8 @@
 | `set_group_album_media_like` | 点赞群相册 | ❌ | ✅ | ✅ |
 | `cancel_group_album_media_like` | 取消点赞 | ❌ | ✅ | ✅ |
 | `del_group_album_media` | 删除群相册媒体 | ❌ | ✅ | ✅ |
+| `create_group_album` | 创建群相册 | ❌ | ✅ | ❌ |
+| `delete_group_album` | 删除群相册 | ❌ | ✅ | ❌ |
 
 ## 群待办 (group_todo)
 

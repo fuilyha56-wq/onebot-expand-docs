@@ -1,6 +1,6 @@
 # 表情/收藏扩展 API
 
-本分类包含 10 个表情/收藏扩展 API，涵盖收藏表情CRUD/详情/备注/移动/回应等功能。
+本分类包含 12 个表情/收藏扩展 API，涵盖收藏表情CRUD/详情/备注/移动/回应等功能。
 
 ## API 列表
 
@@ -16,3 +16,5 @@
 | [`fetch_emoji_like`](./fetch-emoji-like) | 拉取表情回应列表 | Expand | ✓ | ✓ |
 | [`get_emoji_likes`](./get-emoji-likes) | 获取表情回应详情 | Expand | ✓ | ✓ |
 | [`set_group_reaction`](./set-group-reaction) | 设置群消息表情回应 | Expand | ✓ | ✓ |
+| [`get_recommend_face`](./get-recommend-face) | 获取推荐表情 | LLBot | ✓ | ✗ |
+| [`unset_msg_emoji_like`](./unset-msg-emoji-like) | 取消消息表情回应 | LLBot | ✓ | ✗ |

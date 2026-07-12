@@ -395,6 +395,74 @@ result = await service.get_group_signed_list(group_id=...)
 
 ---
 
+### batch_delete_group_member
+
+批量删除群成员（LLBot 扩展）。
+
+对应 OneBot API: batch_delete_group_member
+
+`python
+async def batch_delete_group_member(
+    self,
+    group_id: int,
+    user_ids: list[int],
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| group_id | int | - | 群号 |
+| user_ids | list[int] | - | 要踢出的 QQ 号列表 |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import GroupExtService
+
+service = GroupExtService(plugin)
+result = await service.batch_delete_group_member(group_id=..., user_ids=...)
+`
+
+---
+
+### set_group_msg_mask
+
+设置群消息屏蔽等级（LLBot 扩展）。
+
+对应 OneBot API: set_group_msg_mask
+
+`python
+async def set_group_msg_mask(
+    self,
+    group_id: int,
+    mask: int,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| group_id | int | - | 群号 |
+| mask | int | - | 屏蔽等级（1-4） |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import GroupExtService
+
+service = GroupExtService(plugin)
+result = await service.set_group_msg_mask(group_id=..., mask=...)
+`
+
+---
+
 ## 相关 API
 
 - [set_group_portrait](../api/group-ext/set-group-portrait) — set_group_portrait API 文档

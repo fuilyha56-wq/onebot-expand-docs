@@ -368,6 +368,108 @@ result = await service.rename_flash_file(fileset_id=..., new_name=...)
 
 ---
 
+### get_flash_file_download_urls
+
+获取闪传文件下载 URL 列表（LLBot 扩展）。
+
+对应 OneBot API: get_flash_file_download_urls
+
+`python
+async def get_flash_file_download_urls(
+    self,
+    fileset_id: str,
+    share_link: str,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| fileset_id | str | - | 文件集 ID（与 `share_link` 二选一） |
+| share_link | str | - | 分享链接（与 `fileset_id` 二选一） |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import FlashService
+
+service = FlashService(plugin)
+result = await service.get_flash_file_download_urls(fileset_id=..., share_link=...)
+`
+
+---
+
+### upload_flash_file
+
+上传闪传文件（LLBot 扩展）。
+
+对应 OneBot API: upload_flash_file
+
+`python
+async def upload_flash_file(
+    self,
+    title: str,
+    paths: list[str],
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| title | str | - | 文件集标题 |
+| paths | list[str] | - | 本地文件路径列表 |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import FlashService
+
+service = FlashService(plugin)
+result = await service.upload_flash_file(title=..., paths=...)
+`
+
+---
+
+### reshare_flash_file
+
+重新分享闪传文件（LLBot 扩展）。
+
+对应 OneBot API: reshare_flash_file
+
+`python
+async def reshare_flash_file(
+    self,
+    fileset_id: str,
+    share_link: str,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| fileset_id | str | - | 文件集 ID（与 `share_link` 二选一） |
+| share_link | str | - | 分享链接（与 `fileset_id` 二选一） |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import FlashService
+
+service = FlashService(plugin)
+result = await service.reshare_flash_file(fileset_id=..., share_link=...)
+`
+
+---
+
 ## 相关 API
 
 - [create_flash_task](../api/flash/create-flash-task) — create_flash_task API 文档

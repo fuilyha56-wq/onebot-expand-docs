@@ -1,6 +1,6 @@
 # 用户信息扩展 API
 
-本分类包含 9 个用户信息扩展 API，涵盖好友备注/分类/单向好友/资料/头像等功能。
+本分类包含 13 个用户信息扩展 API，涵盖好友备注/分类/单向好友/资料/头像等功能。
 
 ## API 列表
 
@@ -15,3 +15,7 @@
 | [`set_self_longnick`](./set-self-longnick) | 设置个人签名 | Expand | ✓ | ✓ |
 | [`get_recent_contact`](./get-recent-contact) | 获取最近聊天记录 | Expand | ✓ | ✓ |
 | [`get_profile_like`](./get-profile-like) | 获取自身点赞列表 | Expand | ✓ | ✓ |
+| [`get_profile_like_me`](./get-profile-like-me) | 获取自身被点赞列表 | LLBot | ✓ | ✗ |
+| [`get_profile_like_count`](./get-profile-like-count) | 获取用户点赞总数 | LLBot | ✓ | ✗ |
+| [`get_qq_avatar`](./get-qq-avatar) | 获取QQ头像URL | LLBot | ✓ | ✗ |
+| [`set_friend_category`](./set-friend-category) | 设置好友分类 | LLBot | ✓ | ✗ |

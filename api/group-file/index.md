@@ -1,6 +1,6 @@
 # 群文件管理 API
 
-本分类包含 12 个群文件管理 API，涵盖群文件 CRUD、文件夹、转存等功能。
+本分类包含 13 个群文件管理 API，涵盖群文件 CRUD、文件夹、转存等功能。
 
 ## API 列表
 
@@ -18,3 +18,4 @@
 | [`rename_group_file_folder`](./rename-group-file-folder) | 重命名群文件文件夹 | Expand | ✓ | ✓ |
 | [`trans_group_file`](./trans-group-file) | 转存群文件 | Expand | ✓ | ✓ |
 | [`get_private_file_url`](./get-private-file-url) | 获取私聊文件链接 | Expand | ✓ | ✓ |
+| [`set_group_file_forever`](./set-group-file-forever) | 设置群文件永久保存 | LLBot | ✓ | ✗ |

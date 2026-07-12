@@ -435,6 +435,40 @@ result = await service.get_private_file_url(user_id=..., file_id=..., file_hash=
 
 ---
 
+### set_group_file_forever
+
+设置群文件为永久文件（LLBot 扩展）。
+
+对应 OneBot API: set_group_file_forever
+
+`python
+async def set_group_file_forever(
+    self,
+    group_id: int,
+    file_id: str,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| group_id | int | - | 群号 |
+| file_id | str | - | 群文件 ID |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import GroupFileService
+
+service = GroupFileService(plugin)
+result = await service.set_group_file_forever(group_id=..., file_id=...)
+`
+
+---
+
 ## 相关 API
 
 - [get_group_file_url](../api/group-file/get-group-file-url) — get_group_file_url API 文档

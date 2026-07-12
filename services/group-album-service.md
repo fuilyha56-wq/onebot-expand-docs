@@ -261,6 +261,76 @@ result = await service.del_group_album_media(group_id=..., album_id=..., lloc=..
 
 ---
 
+### create_group_album
+
+创建群相册（LLBot 扩展）。
+
+对应 OneBot API: create_group_album
+
+`python
+async def create_group_album(
+    self,
+    group_id: int,
+    name: str,
+    desc: str,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| group_id | int | - | 群号 |
+| name | str | - | 相册名称 |
+| desc | str | - | 相册描述 |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import GroupAlbumService
+
+service = GroupAlbumService(plugin)
+result = await service.create_group_album(group_id=..., name=..., desc=...)
+`
+
+---
+
+### delete_group_album
+
+删除群相册（LLBot 扩展）。
+
+对应 OneBot API: delete_group_album
+
+`python
+async def delete_group_album(
+    self,
+    group_id: int,
+    album_id: str,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| group_id | int | - | 群号 |
+| album_id | str | - | 相册 ID |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import GroupAlbumService
+
+service = GroupAlbumService(plugin)
+result = await service.delete_group_album(group_id=..., album_id=...)
+`
+
+---
+
 ## 相关 API
 
 - [get_qun_album_list](../api/group-album/get-qun-album-list) — get_qun_album_list API 文档
