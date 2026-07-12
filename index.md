@@ -6,7 +6,7 @@ hero:
   text: OneBot v11 + NapCat 扩展 API 完整封装
   tagline: 185 个 Tool 组件 · 23 个 Service 组件 · NapCat / SnowLuma 双协议端支持
   image:
-    src: /onebot-expand-docs/logo.svg
+    src: /logo.svg
     alt: OneBot Expand
   actions:
     - theme: brand
