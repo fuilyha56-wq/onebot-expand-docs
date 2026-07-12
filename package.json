@@ -1,0 +1,16 @@
+{
+  "name": "onebot-expand-docs",
+  "version": "1.0.0",
+  "description": "OneBot Expand 插件文档站 - VitePress + Material Design 3",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
+  },
+  "license": "MIT"
+}

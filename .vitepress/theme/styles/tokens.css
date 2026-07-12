@@ -1,0 +1,290 @@
+/**
+ * Material Design 3 设计令牌。
+ *
+ * 基于 MD3 规范定义颜色系统、排版、形状、海拔、动效令牌。
+ * 种子色为 OneBot 蓝 (#006495)，通过 Material Theme Builder 生成完整色板。
+ * 同时提供亮色与暗色两套令牌，通过 [data-theme] 属性切换。
+ */
+
+/* ============================================================================
+ * MD3 颜色系统 - 亮色主题
+ * ============================================================================ */
+
+:root,
+:root[data-theme='light'] {
+  /* Primary - 主色调 */
+  --md3-sys-color-primary: #006495;
+  --md3-sys-color-on-primary: #ffffff;
+  --md3-sys-color-primary-container: #c6e7ff;
+  --md3-sys-color-on-primary-container: #001e2e;
+
+  /* Secondary - 次要色 */
+  --md3-sys-color-secondary: #4f616e;
+  --md3-sys-color-on-secondary: #ffffff;
+  --md3-sys-color-secondary-container: #d3e5f5;
+  --md3-sys-color-on-secondary-container: #0a1e29;
+
+  /* Tertiary - 第三色 */
+  --md3-sys-color-tertiary: #5d5792;
+  --md3-sys-color-on-tertiary: #ffffff;
+  --md3-sys-color-tertiary-container: #e3deff;
+  --md3-sys-color-on-tertiary-container: #1a1147;
+
+  /* Error - 错误色 */
+  --md3-sys-color-error: #ba1a1a;
+  --md3-sys-color-on-error: #ffffff;
+  --md3-sys-color-error-container: #ffdad6;
+  --md3-sys-color-on-error-container: #410002;
+
+  /* Success - 成功色（MD3 扩展） */
+  --md3-sys-color-success: #006e2c;
+  --md3-sys-color-on-success: #ffffff;
+  --md3-sys-color-success-container: #9af7a8;
+  --md3-sys-color-on-success-container: #002107;
+
+  /* Warning - 警告色（MD3 扩展） */
+  --md3-sys-color-warning: #7c5800;
+  --md3-sys-color-on-warning: #ffffff;
+  --md3-sys-color-warning-container: #ffdcb8;
+  --md3-sys-color-on-warning-container: #271900;
+
+  /* Background & Surface - 背景与表面 */
+  --md3-sys-color-background: #f8fafd;
+  --md3-sys-color-on-background: #191c1e;
+  --md3-sys-color-surface: #f8fafd;
+  --md3-sys-color-on-surface: #191c1e;
+  --md3-sys-color-surface-variant: #dce3eb;
+  --md3-sys-color-on-surface-variant: #40484c;
+
+  /* Surface Container - 表面容器层级 */
+  --md3-sys-color-surface-container-lowest: #ffffff;
+  --md3-sys-color-surface-container-low: #f2f4f8;
+  --md3-sys-color-surface-container: #eceef2;
+  --md3-sys-color-surface-container-high: #e6e9ed;
+  --md3-sys-color-surface-container-highest: #e0e3e8;
+
+  /* Outline - 描边 */
+  --md3-sys-color-outline: #70787c;
+  --md3-sys-color-outline-variant: #c0c7cd;
+
+  /* Inverse - 反色 */
+  --md3-sys-color-inverse-surface: #2d3133;
+  --md3-sys-color-inverse-on-surface: #eff1f3;
+  --md3-sys-color-inverse-primary: #7fd0ff;
+
+  /* Shadow - 阴影 */
+  --md3-sys-color-shadow: #000000;
+  --md3-sys-color-scrim: #000000;
+}
+
+/* ============================================================================
+ * MD3 颜色系统 - 暗色主题
+ * ============================================================================ */
+
+:root[data-theme='dark'],
+.dark {
+  /* Primary */
+  --md3-sys-color-primary: #7fd0ff;
+  --md3-sys-color-on-primary: #00344c;
+  --md3-sys-color-primary-container: #004b6c;
+  --md3-sys-color-on-primary-container: #c6e7ff;
+
+  /* Secondary */
+  --md3-sys-color-secondary: #b7c9da;
+  --md3-sys-color-on-secondary: #21303b;
+  --md3-sys-color-secondary-container: #374752;
+  --md3-sys-color-on-secondary-container: #d3e5f5;
+
+  /* Tertiary */
+  --md3-sys-color-tertiary: #c7c0ff;
+  --md3-sys-color-on-tertiary: #2f295d;
+  --md3-sys-color-tertiary-container: #454075;
+  --md3-sys-color-on-tertiary-container: #e3deff;
+
+  /* Error */
+  --md3-sys-color-error: #ffb4ab;
+  --md3-sys-color-on-error: #690005;
+  --md3-sys-color-error-container: #93000a;
+  --md3-sys-color-on-error-container: #ffdad6;
+
+  /* Success */
+  --md3-sys-color-success: #7bda8b;
+  --md3-sys-color-on-success: #00390f;
+  --md3-sys-color-success-container: #00531a;
+  --md3-sys-color-on-success-container: #9af7a8;
+
+  /* Warning */
+  --md3-sys-color-warning: #f6bd4c;
+  --md3-sys-color-on-warning: #412d00;
+  --md3-sys-color-warning-container: #5d4200;
+  --md3-sys-color-on-warning-container: #ffdcb8;
+
+  /* Background & Surface */
+  --md3-sys-color-background: #191c1e;
+  --md3-sys-color-on-background: #e0e3e8;
+  --md3-sys-color-surface: #191c1e;
+  --md3-sys-color-on-surface: #e0e3e8;
+  --md3-sys-color-surface-variant: #40484c;
+  --md3-sys-color-on-surface-variant: #c0c7cd;
+
+  /* Surface Container */
+  --md3-sys-color-surface-container-lowest: #131517;
+  --md3-sys-color-surface-container-low: #1c1f22;
+  --md3-sys-color-surface-container: #202326;
+  --md3-sys-color-surface-container-high: #25282a;
+  --md3-sys-color-surface-container-highest: #2a2d30;
+
+  /* Outline */
+  --md3-sys-color-outline: #8a9296;
+  --md3-sys-color-outline-variant: #40484c;
+
+  /* Inverse */
+  --md3-sys-color-inverse-surface: #e0e3e8;
+  --md3-sys-color-inverse-on-surface: #2d3133;
+  --md3-sys-color-inverse-primary: #006495;
+
+  /* Shadow */
+  --md3-sys-color-shadow: #000000;
+  --md3-sys-color-scrim: #000000;
+}
+
+/* ============================================================================
+ * MD3 排版 Type Scale
+ * ============================================================================ */
+
+:root {
+  /* 字体族 */
+  --md3-typescale-font-family: 'Roboto', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --md3-typescale-code-font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+
+  /* Display - 展示字 */
+  --md3-typescale-display-large-size: 3.5625rem;   /* 57px */
+  --md3-typescale-display-large-line-height: 4rem; /* 64px */
+  --md3-typescale-display-large-weight: 400;
+  --md3-typescale-display-medium-size: 2.8125rem;  /* 45px */
+  --md3-typescale-display-medium-line-height: 3.25rem; /* 52px */
+  --md3-typescale-display-medium-weight: 400;
+  --md3-typescale-display-small-size: 2.25rem;    /* 36px */
+  --md3-typescale-display-small-line-height: 2.75rem; /* 44px */
+  --md3-typescale-display-small-weight: 400;
+
+  /* Headline - 标题字 */
+  --md3-typescale-headline-large-size: 2rem;       /* 32px */
+  --md3-typescale-headline-large-line-height: 2.5rem; /* 40px */
+  --md3-typescale-headline-large-weight: 400;
+  --md3-typescale-headline-medium-size: 1.75rem;  /* 28px */
+  --md3-typescale-headline-medium-line-height: 2.25rem; /* 36px */
+  --md3-typescale-headline-medium-weight: 400;
+  --md3-typescale-headline-small-size: 1.4375rem; /* 23px */
+  --md3-typescale-headline-small-line-height: 2rem; /* 32px */
+  --md3-typescale-headline-small-weight: 400;
+
+  /* Title - 标题 */
+  --md3-typescale-title-large-size: 1.375rem;     /* 22px */
+  --md3-typescale-title-large-line-height: 1.75rem; /* 28px */
+  --md3-typescale-title-large-weight: 500;
+  --md3-typescale-title-medium-size: 1rem;        /* 16px */
+  --md3-typescale-title-medium-line-height: 1.5rem; /* 24px */
+  --md3-typescale-title-medium-weight: 500;
+  --md3-typescale-title-small-size: 0.875rem;     /* 14px */
+  --md3-typescale-title-small-line-height: 1.25rem; /* 20px */
+  --md3-typescale-title-small-weight: 500;
+
+  /* Body - 正文 */
+  --md3-typescale-body-large-size: 1rem;           /* 16px */
+  --md3-typescale-body-large-line-height: 1.5rem;  /* 24px */
+  --md3-typescale-body-large-weight: 400;
+  --md3-typescale-body-medium-size: 0.875rem;      /* 14px */
+  --md3-typescale-body-medium-line-height: 1.25rem; /* 20px */
+  --md3-typescale-body-medium-weight: 400;
+  --md3-typescale-body-small-size: 0.75rem;        /* 12px */
+  --md3-typescale-body-small-line-height: 1rem;    /* 16px */
+  --md3-typescale-body-small-weight: 400;
+
+  /* Label - 标签 */
+  --md3-typescale-label-large-size: 0.875rem;      /* 14px */
+  --md3-typescale-label-large-line-height: 1.25rem; /* 20px */
+  --md3-typescale-label-large-weight: 500;
+  --md3-typescale-label-medium-size: 0.75rem;      /* 12px */
+  --md3-typescale-label-medium-line-height: 1rem;  /* 16px */
+  --md3-typescale-label-medium-weight: 500;
+  --md3-typescale-label-small-size: 0.6875rem;     /* 11px */
+  --md3-typescale-label-small-line-height: 1rem;   /* 16px */
+  --md3-typescale-label-small-weight: 500;
+}
+
+/* ============================================================================
+ * MD3 形状 Shape Scale
+ * ============================================================================ */
+
+:root {
+  --md3-shape-corner-none: 0;
+  --md3-shape-corner-extra-small: 4px;
+  --md3-shape-corner-small: 8px;
+  --md3-shape-corner-medium: 12px;
+  --md3-shape-corner-large: 16px;
+  --md3-shape-corner-extra-large: 28px;
+  --md3-shape-corner-full: 9999px;
+}
+
+/* ============================================================================
+ * MD3 海拔 Elevation
+ * 使用 box-shadow + 表面色叠加模拟 MD3 海拔
+ * ============================================================================ */
+
+:root {
+  /* Elevation 0 - 无海拔 */
+  --md3-elevation-0: none;
+
+  /* Elevation 1 - 低海拔 */
+  --md3-elevation-1: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+  /* Elevation 2 - 中海拔 */
+  --md3-elevation-2: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+
+  /* Elevation 3 - 较高海拔 */
+  --md3-elevation-3: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+
+  /* Elevation 4 - 高海拔 */
+  --md3-elevation-4: 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 6px 10px 4px rgba(0, 0, 0, 0.15);
+
+  /* Elevation 5 - 最高海拔 */
+  --md3-elevation-5: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================================
+ * MD3 动效 Motion
+ * ============================================================================ */
+
+:root {
+  /* Duration - 持续时间 */
+  --md3-motion-duration-short-1: 50ms;
+  --md3-motion-duration-short-2: 100ms;
+  --md3-motion-duration-short-3: 150ms;
+  --md3-motion-duration-short-4: 200ms;
+  --md3-motion-duration-medium-1: 250ms;
+  --md3-motion-duration-medium-2: 300ms;
+  --md3-motion-duration-medium-3: 350ms;
+  --md3-motion-duration-medium-4: 400ms;
+  --md3-motion-duration-long-1: 450ms;
+  --md3-motion-duration-long-2: 500ms;
+
+  /* Easing - 缓动曲线 */
+  --md3-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --md3-motion-easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
+  --md3-motion-easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --md3-motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --md3-motion-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --md3-motion-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+}
+
+/* ============================================================================
+ * MD3 状态层 State Layer
+ * ============================================================================ */
+
+:root {
+  --md3-state-layer-opacity-hover: 0.08;
+  --md3-state-layer-opacity-focus: 0.12;
+  --md3-state-layer-opacity-pressed: 0.12;
+  --md3-state-layer-opacity-dragged: 0.16;
+}

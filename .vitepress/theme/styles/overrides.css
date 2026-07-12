@@ -1,0 +1,507 @@
+/**
+ * VitePress 默认样式覆盖。
+ *
+ * 将 MD3 设计令牌映射到 VitePress 的 CSS 变量（--vp-*），
+ * 使默认组件（导航栏/侧边栏/搜索框/代码块/表格）呈现 MD3 视觉。
+ */
+
+/* ============================================================================
+ * 亮色主题 - VitePress 变量映射
+ * ============================================================================ */
+
+:root {
+  /* 品牌色 */
+  --vp-c-brand-1: var(--md3-sys-color-primary);
+  --vp-c-brand-2: var(--md3-sys-color-primary);
+  --vp-c-brand-3: var(--md3-sys-color-primary-container);
+  --vp-c-brand-light: var(--md3-sys-color-primary);
+  --vp-c-brand-lighter: var(--md3-sys-color-primary-container);
+  --vp-c-brand-dark: var(--md3-sys-color-primary);
+  --vp-c-brand-darker: var(--md3-sys-color-on-primary-container);
+
+  /* 文字色 */
+  --vp-c-text-1: var(--md3-sys-color-on-surface);
+  --vp-c-text-2: var(--md3-sys-color-on-surface-variant);
+  --vp-c-text-3: var(--md3-sys-color-outline);
+
+  /* 背景色 */
+  --vp-c-bg: var(--md3-sys-color-surface);
+  --vp-c-bg-alt: var(--md3-sys-color-surface-container-low);
+  --vp-c-bg-elv: var(--md3-sys-color-surface-container);
+  --vp-c-bg-soft: var(--md3-sys-color-surface-container-low);
+
+  /* 边框色 */
+  --vp-c-border: var(--md3-sys-color-outline-variant);
+  --vp-c-divider: var(--md3-sys-color-outline-variant);
+  --vp-c-gutter: var(--md3-sys-color-outline-variant);
+
+  /* 错误/警告色 */
+  --vp-c-danger-1: var(--md3-sys-color-error);
+  --vp-c-warning-1: var(--md3-sys-color-warning);
+
+  /* 按钮色 */
+  --vp-button-brand-bg: var(--md3-sys-color-primary);
+  --vp-button-brand-hover-bg: var(--md3-sys-color-primary);
+  --vp-button-brand-active-border: var(--md3-sys-color-primary);
+  --vp-button-brand-text: var(--md3-sys-color-on-primary);
+  --vp-button-brand-hover-text: var(--md3-sys-color-on-primary);
+  --vp-button-alt-bg: var(--md3-sys-color-surface-container-high);
+  --vp-button-alt-hover-bg: var(--md3-sys-color-surface-container-highest);
+  --vp-button-alt-border: var(--md3-sys-color-outline);
+  --vp-button-alt-text: var(--md3-sys-color-primary);
+  --vp-button-alt-hover-text: var(--md3-sys-color-primary);
+
+  /* 字体 */
+  --vp-font-family-base: var(--md3-typescale-font-family);
+  --vp-font-family-mono: var(--md3-typescale-code-font-family);
+
+  /* 首页 Hero 名称 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, var(--md3-sys-color-primary), var(--md3-sys-color-tertiary));
+  --vp-home-hero-image-background-image: linear-gradient(135deg, var(--md3-sys-color-primary-container), var(--md3-sys-color-tertiary-container));
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+/* ============================================================================
+ * 暗色主题 - VitePress 变量映射
+ * ============================================================================ */
+
+.dark {
+  --vp-c-brand-1: var(--md3-sys-color-primary);
+  --vp-c-brand-2: var(--md3-sys-color-primary);
+  --vp-c-brand-3: var(--md3-sys-color-primary-container);
+
+  --vp-c-text-1: var(--md3-sys-color-on-surface);
+  --vp-c-text-2: var(--md3-sys-color-on-surface-variant);
+  --vp-c-text-3: var(--md3-sys-color-outline);
+
+  --vp-c-bg: var(--md3-sys-color-surface);
+  --vp-c-bg-alt: var(--md3-sys-color-surface-container-low);
+  --vp-c-bg-elv: var(--md3-sys-color-surface-container);
+  --vp-c-bg-soft: var(--md3-sys-color-surface-container-low);
+
+  --vp-c-border: var(--md3-sys-color-outline-variant);
+  --vp-c-divider: var(--md3-sys-color-outline-variant);
+  --vp-c-gutter: var(--md3-sys-color-outline-variant);
+
+  --vp-button-brand-bg: var(--md3-sys-color-primary);
+  --vp-button-brand-text: var(--md3-sys-color-on-primary);
+  --vp-button-alt-bg: var(--md3-sys-color-surface-container-high);
+  --vp-button-alt-hover-bg: var(--md3-sys-color-surface-container-highest);
+  --vp-button-alt-border: var(--md3-sys-color-outline);
+  --vp-button-alt-text: var(--md3-sys-color-primary);
+
+  --vp-home-hero-image-background-image: linear-gradient(135deg, var(--md3-sys-color-primary-container), var(--md3-sys-color-tertiary-container));
+}
+
+/* ============================================================================
+ * 全局排版覆盖
+ * ============================================================================ */
+
+body {
+  font-family: var(--md3-typescale-font-family);
+  font-size: var(--md3-typescale-body-large-size);
+  line-height: var(--md3-typescale-body-large-line-height);
+  background-color: var(--md3-sys-color-background);
+  color: var(--md3-sys-color-on-background);
+}
+
+/* ============================================================================
+ * 导航栏 - MD3 Top App Bar 风格
+ * ============================================================================ */
+
+.VPNav {
+  background-color: var(--md3-sys-color-surface-container);
+  box-shadow: var(--md3-elevation-1);
+  border-bottom: none !important;
+}
+
+.VPNavBar {
+  background-color: transparent !important;
+  padding: 0 1rem;
+}
+
+.VPNavBar .title {
+  font-size: var(--md3-typescale-title-large-size);
+  font-weight: var(--md3-typescale-title-large-weight);
+  line-height: var(--md3-typescale-title-large-line-height);
+}
+
+.VPNavBarMenuLink {
+  font-size: var(--md3-typescale-label-large-size);
+  font-weight: var(--md3-typescale-label-large-weight);
+}
+
+.VPNavBarMenuLink:hover {
+  color: var(--md3-sys-color-primary);
+}
+
+/* 搜索框 - MD3 Search Bar 风格 */
+.VPNavBarSearch {
+  display: flex;
+  align-items: center;
+}
+
+.DocSearch-Button {
+  border-radius: var(--md3-shape-corner-full) !important;
+  background-color: var(--md3-sys-color-surface-container-high) !important;
+  box-shadow: none !important;
+  border: 1px solid var(--md3-sys-color-outline-variant) !important;
+  transition: all var(--md3-motion-duration-short-3) var(--md3-motion-easing-standard);
+}
+
+.DocSearch-Button:hover {
+  background-color: var(--md3-sys-color-surface-container-highest) !important;
+  box-shadow: var(--md3-elevation-1) !important;
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: var(--md3-typescale-body-medium-size) !important;
+}
+
+/* ============================================================================
+ * 侧边栏 - MD3 Navigation Drawer 风格
+ * ============================================================================ */
+
+.VPSidebar {
+  background-color: var(--md3-sys-color-surface-container-low) !important;
+  border-right: 1px solid var(--md3-sys-color-outline-variant) !important;
+}
+
+.VPSidebarItem .text {
+  font-size: var(--md3-typescale-label-large-size);
+  font-weight: var(--md3-typescale-label-large-weight);
+  border-radius: var(--md3-shape-corner-full);
+  transition: background-color var(--md3-motion-duration-short-3) var(--md3-motion-easing-standard);
+}
+
+.VPSidebarItem:hover .text {
+  color: var(--md3-sys-color-on-surface);
+}
+
+.VPSidebarItem.active > .item > .indicator {
+  background-color: var(--md3-sys-color-secondary-container);
+}
+
+.VPSidebarItem.active .text {
+  color: var(--md3-sys-color-on-secondary-container);
+  font-weight: var(--md3-typescale-label-large-weight);
+}
+
+/* ============================================================================
+ * 内容区 - MD3 排版
+ * ============================================================================ */
+
+.VPDoc.has-sidebar .content-container {
+  max-width: 800px;
+}
+
+.vp-doc h1 {
+  font-size: var(--md3-typescale-display-small-size);
+  line-height: var(--md3-typescale-display-small-line-height);
+  font-weight: var(--md3-typescale-display-small-weight);
+  letter-spacing: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
+}
+
+.vp-doc h2 {
+  font-size: var(--md3-typescale-headline-large-size);
+  line-height: var(--md3-typescale-headline-large-line-height);
+  font-weight: var(--md3-typescale-headline-large-weight);
+  border-bottom: 1px solid var(--md3-sys-color-outline-variant);
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+.vp-doc h3 {
+  font-size: var(--md3-typescale-headline-medium-size);
+  line-height: var(--md3-typescale-headline-medium-line-height);
+  font-weight: var(--md3-typescale-headline-medium-weight);
+  margin-top: 2rem;
+}
+
+.vp-doc h4 {
+  font-size: var(--md3-typescale-title-large-size);
+  line-height: var(--md3-typescale-title-large-line-height);
+  font-weight: var(--md3-typescale-title-large-weight);
+}
+
+.vp-doc p,
+.vp-doc li {
+  font-size: var(--md3-typescale-body-large-size);
+  line-height: var(--md3-typescale-body-large-line-height);
+}
+
+.vp-doc a {
+  color: var(--md3-sys-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--md3-motion-duration-short-3) var(--md3-motion-easing-standard);
+}
+
+.vp-doc a:hover {
+  color: var(--md3-sys-color-on-primary-container);
+  text-decoration: underline;
+}
+
+/* ============================================================================
+ * 代码块 - MD3 风格
+ * ============================================================================ */
+
+.vp-doc div[class*='language-'],
+.vp-block {
+  border-radius: var(--md3-shape-corner-medium);
+  background-color: var(--md3-sys-color-surface-container);
+  box-shadow: var(--md3-elevation-1);
+  border: 1px solid var(--md3-sys-color-outline-variant);
+}
+
+.vp-doc :not(pre) > code {
+  font-size: var(--md3-typescale-body-medium-size);
+  background-color: var(--md3-sys-color-surface-container-high);
+  color: var(--md3-sys-color-primary);
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--md3-shape-corner-extra-small);
+  font-weight: 500;
+}
+
+/* ============================================================================
+ * 表格 - MD3 Data Table 风格
+ * ============================================================================ */
+
+.vp-doc table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--md3-shape-corner-medium);
+  overflow: hidden;
+  box-shadow: var(--md3-elevation-1);
+  border: 1px solid var(--md3-sys-color-outline-variant);
+  width: 100%;
+}
+
+.vp-doc thead {
+  background-color: var(--md3-sys-color-surface-container-high);
+}
+
+.vp-doc th {
+  font-size: var(--md3-typescale-label-large-size);
+  font-weight: var(--md3-typescale-label-large-weight);
+  color: var(--md3-sys-color-on-surface-variant);
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--md3-sys-color-outline-variant);
+}
+
+.vp-doc td {
+  font-size: var(--md3-typescale-body-medium-size);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--md3-sys-color-outline-variant);
+}
+
+.vp-doc tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vp-doc tbody tr:hover {
+  background-color: var(--md3-sys-color-surface-container-low);
+}
+
+/* ============================================================================
+ * 提示框 - MD3 风格
+ * ============================================================================ */
+
+.vp-doc .custom-block {
+  border-radius: var(--md3-shape-corner-medium);
+  border-left: 4px solid var(--md3-sys-color-primary);
+  background-color: var(--md3-sys-color-surface-container-low);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.vp-doc .custom-block .custom-block-title {
+  font-size: var(--md3-typescale-title-small-size);
+  font-weight: var(--md3-typescale-title-small-weight);
+  margin-bottom: 0.5rem;
+}
+
+.vp-doc .custom-block.tip {
+  border-left-color: var(--md3-sys-color-primary);
+}
+
+.vp-doc .custom-block.warning {
+  border-left-color: var(--md3-sys-color-warning);
+  background-color: var(--md3-sys-color-warning-container);
+}
+
+.vp-doc .custom-block.warning .custom-block-title {
+  color: var(--md3-sys-color-on-warning-container);
+}
+
+.vp-doc .custom-block.danger {
+  border-left-color: var(--md3-sys-color-error);
+  background-color: var(--md3-sys-color-error-container);
+}
+
+.vp-doc .custom-block.danger .custom-block-title {
+  color: var(--md3-sys-color-on-error-container);
+}
+
+/* ============================================================================
+ * 首页 - MD3 风格
+ * ============================================================================ */
+
+.VPHome .VPHero .name {
+  font-size: var(--md3-typescale-display-large-size);
+  line-height: var(--md3-typescale-display-large-line-height);
+  font-weight: var(--md3-typescale-display-large-weight);
+  letter-spacing: -0.02em;
+}
+
+.VPHome .VPHero .text {
+  font-size: var(--md3-typescale-headline-medium-size);
+  line-height: var(--md3-typescale-headline-medium-line-height);
+  font-weight: var(--md3-typescale-headline-medium-weight);
+}
+
+.VPHome .VPHero .tagline {
+  font-size: var(--md3-typescale-title-medium-size);
+  line-height: var(--md3-typescale-title-medium-line-height);
+  color: var(--md3-sys-color-on-surface-variant);
+}
+
+.VPHome .VPFeatures .items {
+  gap: 1.5rem;
+}
+
+.VPHome .VPFeature {
+  border-radius: var(--md3-shape-corner-large) !important;
+  background-color: var(--md3-sys-color-surface-container-low) !important;
+  border: 1px solid var(--md3-sys-color-outline-variant) !important;
+  box-shadow: var(--md3-elevation-1) !important;
+  transition: box-shadow var(--md3-motion-duration-medium-2) var(--md3-motion-easing-standard),
+              transform var(--md3-motion-duration-medium-2) var(--md3-motion-easing-emphasized);
+}
+
+.VPHome .VPFeature:hover {
+  box-shadow: var(--md3-elevation-3) !important;
+  transform: translateY(-2px);
+}
+
+.VPHome .VPFeature .title {
+  font-size: var(--md3-typescale-title-large-size);
+  font-weight: var(--md3-typescale-title-large-weight);
+  color: var(--md3-sys-color-on-surface);
+}
+
+.VPHome .VPFeature .details {
+  font-size: var(--md3-typescale-body-medium-size);
+  line-height: var(--md3-typescale-body-medium-line-height);
+  color: var(--md3-sys-color-on-surface-variant);
+}
+
+/* ============================================================================
+ * 按钮 - MD3 Button 风格
+ * ============================================================================ */
+
+.VPButton {
+  border-radius: var(--md3-shape-corner-full) !important;
+  font-size: var(--md3-typescale-label-large-size) !important;
+  font-weight: var(--md3-typescale-label-large-weight) !important;
+  padding: 0.625rem 1.5rem !important;
+  transition: all var(--md3-motion-duration-short-3) var(--md3-motion-easing-standard) !important;
+}
+
+.VPButton.brand {
+  background-color: var(--md3-sys-color-primary) !important;
+  color: var(--md3-sys-color-on-primary) !important;
+  box-shadow: var(--md3-elevation-1) !important;
+}
+
+.VPButton.brand:hover {
+  box-shadow: var(--md3-elevation-2) !important;
+  background-color: var(--md3-sys-color-primary) !important;
+}
+
+.VPButton.alt {
+  background-color: var(--md3-sys-color-surface-container-high) !important;
+  color: var(--md3-sys-color-primary) !important;
+  border: 1px solid var(--md3-sys-color-outline) !important;
+  box-shadow: none !important;
+}
+
+.VPButton.alt:hover {
+  background-color: var(--md3-sys-color-surface-container-highest) !important;
+  box-shadow: var(--md3-elevation-1) !important;
+}
+
+/* ============================================================================
+ * 滚动条 - MD3 风格
+ * ============================================================================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--md3-sys-color-outline-variant);
+  border-radius: var(--md3-shape-corner-full);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--md3-sys-color-outline);
+  background-clip: content-box;
+}
+
+/* ============================================================================
+ * 选中文字 - MD3 风格
+ * ============================================================================ */
+
+::selection {
+  background-color: var(--md3-sys-color-primary-container);
+  color: var(--md3-sys-color-on-primary-container);
+}
+
+/* ============================================================================
+ * 页脚 - MD3 风格
+ * ============================================================================ */
+
+.VPFooter {
+  background-color: var(--md3-sys-color-surface-container-low) !important;
+  border-top: 1px solid var(--md3-sys-color-outline-variant) !important;
+  padding: 1.5rem !important;
+}
+
+.VPFooter .copyright {
+  font-size: var(--md3-typescale-body-medium-size);
+  color: var(--md3-sys-color-on-surface-variant);
+}
+
+/* ============================================================================
+ * 移动端响应式
+ * ============================================================================ */
+
+@media (max-width: 768px) {
+  .vp-doc h1 {
+    font-size: var(--md3-typescale-headline-large-size);
+    line-height: var(--md3-typescale-headline-large-line-height);
+  }
+
+  .vp-doc h2 {
+    font-size: var(--md3-typescale-headline-medium-size);
+    line-height: var(--md3-typescale-headline-medium-line-height);
+  }
+
+  .VPHome .VPHero .name {
+    font-size: var(--md3-typescale-display-medium-size);
+    line-height: var(--md3-typescale-display-medium-line-height);
+  }
+}
