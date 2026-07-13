@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="unsupported" />
 <ApiBadge platform="napcat" status="supported" />
 <ApiBadge platform="snowluma" status="supported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 插件扩展（onebot_expand）
@@ -17,7 +18,7 @@
 | 参数名 | 类型 | 默认值 | 必填 | 说明 |
 |---|---|---|---|---|
 | `group_id` | int | - | ✅ | 群号 |
-| `add_type` | int | - | ✅ | 入群方式（具体取值见三方差异） |
+| `add_type` | int | - | ✅ | 入群方式（具体取值见四方差异） |
 
 ## 响应
 
@@ -48,7 +49,7 @@
 }
 ```
 
-## 三方差异
+## 四方差异
 
 napcat 与 snowluma 实现一致，`add_type` 取值含义需参考各平台文档。
 

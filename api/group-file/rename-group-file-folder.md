@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="unsupported" />
 <ApiBadge platform="napcat" status="supported" />
 <ApiBadge platform="snowluma" status="supported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 SnowLuma 扩展
@@ -50,7 +51,7 @@ SnowLuma 扩展
 }
 ```
 
-## 三方差异
+## 四方差异
 
 | 平台 | 说明 |
 |---|---|

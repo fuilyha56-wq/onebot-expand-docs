@@ -7,6 +7,7 @@ go-cqhttp 分词（NapCat 支持，SnowLuma 未实现）。
 <ApiBadge platform="onebot" status="supported" />
 <ApiBadge platform="napcat" status="exclusive" />
 <ApiBadge platform="snowluma" status="unsupported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 go-cqhttp 兼容 API
@@ -65,7 +66,7 @@ go-cqhttp 兼容 API
 }
 ```
 
-## 三方差异
+## 四方差异
 
 仅 NapCat 支持此 API（NapCat 专属）。SnowLuma 未实现分词功能。OneBot v11 标准定义了此 API。
 

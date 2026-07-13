@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="unsupported" />
 <ApiBadge platform="napcat" status="supported" />
 <ApiBadge platform="snowluma" status="supported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 插件扩展（onebot_expand）
@@ -64,7 +65,7 @@
 }
 ```
 
-## 三方差异
+## 四方差异
 
 SnowLuma 主名为 `share_peer`，NapCat 标准化别名为 `send_ark_share`，两者功能等价。OneBot v11 标准未定义此 API。
 

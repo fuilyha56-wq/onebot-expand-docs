@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="unsupported" />
 <ApiBadge platform="napcat" status="exclusive" />
 <ApiBadge platform="snowluma" status="unsupported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 插件扩展 API（`napcat_only=True`，`snowluma_compat=False`）
@@ -60,7 +61,7 @@
 }
 ```
 
-## 三方差异
+## 四方差异
 
 | 平台 | 支持情况 | 说明 |
 |---|---|---|

@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="supported" />
 <ApiBadge platform="napcat" status="supported" />
 <ApiBadge platform="snowluma" status="supported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 go-cqhttp 兼容
@@ -50,9 +51,9 @@ go-cqhttp 兼容
 }
 ```
 
-## 三方差异
+## 四方差异
 
-三方实现一致，无差异。
+四方实现一致，无差异。
 
 ## 相关 API
 

@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="supported" />
 <ApiBadge platform="napcat" status="supported" />
 <ApiBadge platform="snowluma" status="supported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 go-cqhttp 兼容 API
@@ -76,9 +77,9 @@ go-cqhttp 兼容 API
 }
 ```
 
-## 三方差异
+## 四方差异
 
-三方实现一致，均支持 go-cqhttp 兼容的 OCR 接口。
+四方实现一致，均支持 go-cqhttp 兼容的 OCR 接口。
 
 ## 相关 API
 

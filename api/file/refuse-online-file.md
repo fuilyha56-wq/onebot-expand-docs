@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="unsupported" />
 <ApiBadge platform="napcat" status="exclusive" />
 <ApiBadge platform="snowluma" status="unsupported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: warning NapCat 专属
 此 API 为 NapCat 专属，SnowLuma 不支持。
@@ -49,7 +50,7 @@
 }
 ```
 
-## 三方差异
+## 四方差异
 
 NapCat 专属 API，SnowLuma 不支持。
 

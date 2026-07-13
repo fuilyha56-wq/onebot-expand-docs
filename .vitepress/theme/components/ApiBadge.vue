@@ -2,7 +2,7 @@
 /**
  * API 兼容性徽章组件。
  *
- * 以 MD3 Chip 风格展示 API 在 OneBot v11 / NapCat / SnowLuma 三方的支持状态。
+ * 以 MD3 Chip 风格展示 API 在 OneBot v11 / NapCat / SnowLuma / LLBot 四方的支持状态。
  * 三态：supported（支持）/ exclusive（专属）/ unsupported（不支持）。
  */
 
@@ -10,7 +10,7 @@ import { computed } from 'vue'
 
 interface Props {
   /** 协议端名称 */
-  platform: 'onebot' | 'napcat' | 'snowluma'
+  platform: 'onebot' | 'napcat' | 'snowluma' | 'llbot'
   /** 支持状态 */
   status: 'supported' | 'exclusive' | 'unsupported'
   /** 显示标签（可选，默认按 platform 取） */
@@ -25,6 +25,7 @@ const platformLabels: Record<Props['platform'], string> = {
   onebot: 'OneBot v11',
   napcat: 'NapCat',
   snowluma: 'SnowLuma',
+  llbot: 'LLBot',
 }
 
 const displayLabel = computed(() => props.label || platformLabels[props.platform])

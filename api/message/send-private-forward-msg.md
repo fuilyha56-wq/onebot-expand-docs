@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="supported" />
 <ApiBadge platform="napcat" status="supported" />
 <ApiBadge platform="snowluma" status="supported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 go-cqhttp 兼容 API
@@ -73,9 +74,9 @@ go-cqhttp 兼容 API
 }
 ```
 
-## 三方差异
+## 四方差异
 
-三方实现一致，无差异。此 API 为 go-cqhttp 兼容接口，与 NapCat 扩展的 `send_forward_msg` 功能类似但需显式指定 `user_id`。
+四方实现一致，无差异。此 API 为 go-cqhttp 兼容接口，与 NapCat 扩展的 `send_forward_msg` 功能类似但需显式指定 `user_id`。
 
 ## 相关 API
 

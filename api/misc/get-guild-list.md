@@ -7,6 +7,7 @@
 <ApiBadge platform="onebot" status="unsupported" />
 <ApiBadge platform="napcat" status="supported" />
 <ApiBadge platform="snowluma" status="unsupported" />
+<ApiBadge platform="llbot" status="supported" />
 
 ::: tip 来源
 NapCat / LLBot 扩展
@@ -81,7 +82,7 @@ NapCat / LLBot 扩展
 }
 ```
 
-## 三方差异
+## 四方差异
 
 NapCat 与 LLBot 均支持此 API。SnowLuma 与 OneBot v11 标准不支持此 API。返回字段结构因实现版本而异。
 
