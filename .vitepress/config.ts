@@ -10,7 +10,7 @@ import type { ThemeConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'OneBot Expand',
-  description: 'OneBot v11 + NapCat 扩展 API 完整封装插件文档',
+  description: 'OneBot v11 + NapCat + LLBot 扩展 API 完整封装插件文档',
   base: '/onebot-expand-docs/',
   cleanUrls: true,
   lastUpdated: true,
@@ -105,7 +105,7 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/napcat-ext/' }],
         },
         {
-          text: '群文件管理 (12)',
+          text: '群文件管理 (13)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/group-file/' }],
         },
@@ -115,7 +115,7 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/group-notice/' }],
         },
         {
-          text: '群管理扩展 (12)',
+          text: '群管理扩展 (14)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/group-ext/' }],
         },
@@ -125,7 +125,7 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/request/' }],
         },
         {
-          text: '用户信息扩展 (9)',
+          text: '用户信息扩展 (13)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/user-ext/' }],
         },
@@ -140,7 +140,7 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/poke/' }],
         },
         {
-          text: '表情/收藏扩展 (10)',
+          text: '表情/收藏扩展 (12)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/emoji-ext/' }],
         },
@@ -155,17 +155,17 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/cred/' }],
         },
         {
-          text: '机型/其他 (12)',
+          text: '机型/其他 (18)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/misc/' }],
         },
         {
-          text: '闪传 (11)',
+          text: '闪传 (14)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/flash/' }],
         },
         {
-          text: '群相册 (7)',
+          text: '群相册 (9)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/group-album/' }],
         },
@@ -210,7 +210,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Lycoris/onebot-expand-docs' },
+      { icon: 'github', link: 'https://github.com/fuilyha56-wq/onebot-expand-docs' },
     ],
 
     search: {

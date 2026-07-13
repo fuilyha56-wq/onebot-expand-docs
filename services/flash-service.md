@@ -477,3 +477,12 @@ result = await service.reshare_flash_file(fileset_id=..., share_link=...)
 - [get_flash_file_list](../api/flash/get-flash-file-list) — get_flash_file_list API 文档
 - [get_flash_file_url](../api/flash/get-flash-file-url) — get_flash_file_url API 文档
 - [get_share_link](../api/flash/get-share-link) — get_share_link API 文档
+- [download_fileset](../api/flash/download-fileset) — download_fileset API 文档
+- [get_fileset_info](../api/flash/get-fileset-info) — get_fileset_info API 文档
+- [get_fileset_id](../api/flash/get-fileset-id) — get_fileset_id API 文档
+- [list_filesets](../api/flash/list-filesets) — list_filesets API 文档
+- [delete_flash_file](../api/flash/delete-flash-file) — delete_flash_file API 文档
+- [rename_flash_file](../api/flash/rename-flash-file) — rename_flash_file API 文档
+- [get_flash_file_download_urls](../api/flash/get-flash-file-download-urls) — get_flash_file_download_urls API 文档
+- [upload_flash_file](../api/flash/upload-flash-file) — upload_flash_file API 文档
+- [reshare_flash_file](../api/flash/reshare-flash-file) — reshare_flash_file API 文档

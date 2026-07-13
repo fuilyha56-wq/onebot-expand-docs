@@ -676,3 +676,17 @@ result = await service.upload_forward_msg(messages=..., group_id=...)
 - [delete_msg](../api/message/delete-msg) — delete_msg API 文档
 - [get_msg](../api/message/get-msg) — get_msg API 文档
 - [get_forward_msg](../api/message/get-forward-msg) — get_forward_msg API 文档
+- [send_like](../api/message/send-like) — send_like API 文档
+- [send_poke](../api/message/send-poke) — send_poke API 文档
+- [send_forward_msg](../api/message/send-forward-msg) — send_forward_msg API 文档
+- [send_group_forward_msg](../api/message/send-group-forward-msg) — send_group_forward_msg API 文档
+- [send_private_forward_msg](../api/message/send-private-forward-msg) — send_private_forward_msg API 文档
+- [get_group_msg_history](../api/message/get-group-msg-history) — get_group_msg_history API 文档
+- [get_friend_msg_history](../api/message/get-friend-msg-history) — get_friend_msg_history API 文档
+- [forward_friend_single_msg](../api/message/forward-friend-single-msg) — forward_friend_single_msg API 文档
+- [forward_group_single_msg](../api/message/forward-group-single-msg) — forward_group_single_msg API 文档
+- [mark_msg_as_read](../api/message/mark-msg-as-read) — mark_msg_as_read API 文档
+- [mark_group_msg_as_read](../api/message/mark-group-msg-as-read) — mark_group_msg_as_read API 文档
+- [mark_private_msg_as_read](../api/message/mark-private-msg-as-read) — mark_private_msg_as_read API 文档
+- [send_msg](../api/message/send-msg) — send_msg API 文档
+- [upload_forward_msg](../api/message/upload-forward-msg) — upload_forward_msg API 文档

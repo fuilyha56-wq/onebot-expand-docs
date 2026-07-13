@@ -326,3 +326,7 @@ result = await service.set_qzone_msg_right(tid=..., ugc_right=..., target_uins=.
 - [send_qzone_msg](../api/qzone/send-qzone-msg) — send_qzone_msg API 文档
 - [delete_qzone_msg](../api/qzone/delete-qzone-msg) — delete_qzone_msg API 文档
 - [like_qzone](../api/qzone/like-qzone) — like_qzone API 文档
+- [unlike_qzone](../api/qzone/unlike-qzone) — unlike_qzone API 文档
+- [comment_qzone](../api/qzone/comment-qzone) — comment_qzone API 文档
+- [set_qzone_ban](../api/qzone/set-qzone-ban) — set_qzone_ban API 文档
+- [set_qzone_msg_right](../api/qzone/set-qzone-msg-right) — set_qzone_msg_right API 文档

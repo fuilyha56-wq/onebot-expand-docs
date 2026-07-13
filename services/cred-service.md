@@ -259,3 +259,6 @@ result = await service.request_decrypt_key(db_path=...)
 - [get_rkey](../api/cred/get-rkey) — get_rkey API 文档
 - [get_rkey_server](../api/cred/get-rkey-server) — get_rkey_server API 文档
 - [check_url_safely](../api/cred/check-url-safely) — check_url_safely API 文档
+- [ocr_image](../api/cred/ocr-image) — ocr_image API 文档
+- [download_file](../api/cred/download-file) — download_file API 文档
+- [request_decrypt_key](../api/cred/request-decrypt-key) — request_decrypt_key API 文档

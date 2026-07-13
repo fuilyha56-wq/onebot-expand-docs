@@ -455,3 +455,13 @@ result = await service.fetch_ptt_text(message_id=...)
 - [get_online_clients](../api/napcat-ext/get-online-clients) — get_online_clients API 文档
 - [get_cookies](../api/napcat-ext/get-cookies) — get_cookies API 文档
 - [get_csrf_token](../api/napcat-ext/get-csrf-token) — get_csrf_token API 文档
+- [get_status](../api/napcat-ext/get-status) — get_status API 文档
+- [set_restart](../api/napcat-ext/set-restart) — set_restart API 文档
+- [clean_cache](../api/napcat-ext/clean-cache) — clean_cache API 文档
+- [can_send_image](../api/napcat-ext/can-send-image) — can_send_image API 文档
+- [can_send_record](../api/napcat-ext/can-send-record) — can_send_record API 文档
+- [get_version_info](../api/napcat-ext/get-version-info) — get_version_info API 文档
+- [set_essence_msg](../api/napcat-ext/set-essence-msg) — set_essence_msg API 文档
+- [delete_essence_msg](../api/napcat-ext/delete-essence-msg) — delete_essence_msg API 文档
+- [get_group_at_all_remain](../api/napcat-ext/get-group-at-all-remain) — get_group_at_all_remain API 文档
+- [fetch_ptt_text](../api/napcat-ext/fetch-ptt-text) — fetch_ptt_text API 文档

@@ -29,7 +29,7 @@ enable_all_tools = false              # Tool 总开关（默认 false）
 enable_send_group_msg = false         # 群聊消息发送
 enable_send_private_msg = false        # 私聊消息发送
 enable_get_qzone_msg_list = false     # QQ空间说说列表
-# ... 共 185 个 enable_<action> 开关
+# ... 共 205 个 enable_<action> 开关
 ```
 
 ::: warning 默认全部关闭
@@ -55,7 +55,7 @@ mode = "path_mapper"  # 路径映射 / base64 / 共享卷
 
 ```toml
 [protocol]
-backend = "napcat"           # napcat / snowluma
+backend = "napcat"           # napcat / snowluma / llbot
 compat_mode = "auto"         # auto / strict / loose
 ```
 
@@ -73,4 +73,4 @@ enable_get_qzone_msg_list = true # QQ空间说说列表（默认 false）
 ## 下一步
 
 - [架构设计](./architecture) — 了解开关机制的设计原理
-- [API 文档](../api/) — 浏览全部 185 个 API
+- [API 文档](../api/) — 浏览全部 205 个 API

@@ -6,7 +6,7 @@ OneBot Expand 采用双层组件设计，确保 LLM 调用与程序化调用两�
 
 ### Tool 层
 
-每个 API 对应一个 Tool 类（共 185 个），供 LLM 直接调用。Tool 层受**总开关**和**独立开关**双重控制。
+每个 API 对应一个 Tool 类（共 205 个），供 LLM 直接调用。Tool 层受**总开关**和**独立开关**双重控制。
 
 ### Service 层
 
@@ -15,8 +15,8 @@ OneBot Expand 采用双层组件设计，确保 LLM 调用与程序化调用两�
 ## 调用链
 
 ```
-LLM 调用 → Tool.execute（总开关 + 独立开关检查）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma
-其他插件 → Service.method（独立开关检查）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma
+LLM 调用 → Tool.execute（总开关 + 独立开关检查）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma/LLBot
+其他插件 → Service.method（独立开关检查）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma/LLBot
 ```
 
 ## 关键机制
@@ -63,19 +63,19 @@ Service 路径始终启用，确保其他插件通过 Service 调用的路径不
 | FileService | file | 群私聊文件上传、图片/语音获取、流式文件 |
 | AccountService | account | 登录号/好友/群列表与详情 |
 | NapcatExtService | napcat_ext | NapCat 状态/Cookies/CSRF/精华/版本 |
-| GroupFileService | group_file | 群文件 CRUD/文件夹/转存/重命名 |
+| GroupFileService | group_file | 群文件 CRUD/文件夹/转存/重命名/永久保存 |
 | GroupNoticeService | group_notice | 群公告 |
-| GroupExtService | group_ext | 群头像/备注/加群选项/签到/打卡 |
+| GroupExtService | group_ext | 群头像/备注/加群选项/签到/打卡/批量踢出/消息屏蔽 |
 | RequestService | request | 好友/加群请求处理 |
-| UserExtService | user_ext | 好友备注/分类/单向好友/资料/头像 |
+| UserExtService | user_ext | 好友备注/分类/单向好友/资料/头像/点赞 |
 | StatusService | status | 在线状态/DIY状态/输入状态 |
 | PokeService | poke | 戳一拍 |
-| EmojiExtService | emoji_ext | 收藏表情CRUD/详情/备注/移动/回应 |
+| EmojiExtService | emoji_ext | 收藏表情CRUD/详情/备注/移动/回应/推荐表情 |
 | AiVoiceService | ai_voice | AI角色/语音生成 |
 | CredService | cred | clientkey/credentials/rkey/URL安全/OCR/下载/解密 |
-| MiscService | misc | 机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词 |
-| FlashService | flash | 闪传任务/消息/文件列表/URL/分享/下载/文件集CRUD |
-| GroupAlbumService | group_album | 群相册列表/上传/评论/点赞/删除 |
+| MiscService | misc | 机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词/配置/事件/调试/扫码/频道 |
+| FlashService | flash | 闪传任务/消息/文件列表/URL/分享/下载/文件集CRUD/上传/重分享 |
+| GroupAlbumService | group_album | 群相册列表/上传/评论/点赞/删除/创建 |
 | GroupTodoService | group_todo | 群待办设置/完成/取消 |
 | QzoneService | qzone | 说说列表/动态/发表/删除/点赞/评论/拉黑/权限 |
 | ArkService | ark | 用户/群Ark卡片分享 |
@@ -85,5 +85,5 @@ Service 路径始终启用，确保其他插件通过 Service 调用的路径不
 ## 下一步
 
 - [配置说明](./configuration) — 了解所有配置项
-- [API 文档](../api/) — 浏览全部 185 个 API
+- [API 文档](../api/) — 浏览全部 205 个 API
 - [Service 文档](../services/) — 浏览 23 个 Service

@@ -338,3 +338,7 @@ result = await service.delete_group_album(group_id=..., album_id=...)
 - [get_group_album_media_list](../api/group-album/get-group-album-media-list) — get_group_album_media_list API 文档
 - [do_group_album_comment](../api/group-album/do-group-album-comment) — do_group_album_comment API 文档
 - [set_group_album_media_like](../api/group-album/set-group-album-media-like) — set_group_album_media_like API 文档
+- [cancel_group_album_media_like](../api/group-album/cancel-group-album-media-like) — cancel_group_album_media_like API 文档
+- [del_group_album_media](../api/group-album/del-group-album-media) — del_group_album_media API 文档
+- [create_group_album](../api/group-album/create-group-album) — create_group_album API 文档
+- [delete_group_album](../api/group-album/delete-group-album) — delete_group_album API 文档

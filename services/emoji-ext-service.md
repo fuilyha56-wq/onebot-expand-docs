@@ -353,6 +353,72 @@ result = await service.set_group_reaction(message_id=..., code=..., group_id=...
 
 ---
 
+### get_recommend_face
+
+获取推荐表情（LLBot 扩展）。
+
+对应 OneBot API: get_recommend_face
+
+`python
+async def get_recommend_face(
+    self,
+    word: str,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| word | str | - | 关键词 |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import EmojiExtService
+
+service = EmojiExtService(plugin)
+result = await service.get_recommend_face(word=...)
+`
+
+---
+
+### unset_msg_emoji_like
+
+取消消息表情回应（LLBot 扩展）。
+
+对应 OneBot API: unset_msg_emoji_like
+
+`python
+async def unset_msg_emoji_like(
+    self,
+    message_id: int,
+    emoji_id: int,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| message_id | int | - | 消息 ID |
+| emoji_id | int | - | 表情 ID |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import EmojiExtService
+
+service = EmojiExtService(plugin)
+result = await service.unset_msg_emoji_like(message_id=..., emoji_id=...)
+`
+
+---
+
 ## 相关 API
 
 - [fetch_custom_face](../api/emoji-ext/fetch-custom-face) — fetch_custom_face API 文档
@@ -360,3 +426,10 @@ result = await service.set_group_reaction(message_id=..., code=..., group_id=...
 - [add_custom_face](../api/emoji-ext/add-custom-face) — add_custom_face API 文档
 - [delete_custom_face](../api/emoji-ext/delete-custom-face) — delete_custom_face API 文档
 - [set_custom_face_desc](../api/emoji-ext/set-custom-face-desc) — set_custom_face_desc API 文档
+- [modify_custom_face](../api/emoji-ext/modify-custom-face) — modify_custom_face API 文档
+- [move_custom_face_to_front](../api/emoji-ext/move-custom-face-to-front) — move_custom_face_to_front API 文档
+- [fetch_emoji_like](../api/emoji-ext/fetch-emoji-like) — fetch_emoji_like API 文档
+- [get_emoji_likes](../api/emoji-ext/get-emoji-likes) — get_emoji_likes API 文档
+- [set_group_reaction](../api/emoji-ext/set-group-reaction) — set_group_reaction API 文档
+- [get_recommend_face](../api/emoji-ext/get-recommend-face) — get_recommend_face API 文档
+- [unset_msg_emoji_like](../api/emoji-ext/unset-msg-emoji-like) — unset_msg_emoji_like API 文档

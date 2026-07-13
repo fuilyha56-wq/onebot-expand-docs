@@ -589,3 +589,14 @@ result = await service.download_file_image_stream(file=..., file_id=..., chunk_s
 - [get_file](../api/file/get-file) — get_file API 文档
 - [get_image](../api/file/get-image) — get_image API 文档
 - [get_record](../api/file/get-record) — get_record API 文档
+- [send_online_file](../api/file/send-online-file) — send_online_file API 文档
+- [send_online_folder](../api/file/send-online-folder) — send_online_folder API 文档
+- [get_online_file_msg](../api/file/get-online-file-msg) — get_online_file_msg API 文档
+- [receive_online_file](../api/file/receive-online-file) — receive_online_file API 文档
+- [refuse_online_file](../api/file/refuse-online-file) — refuse_online_file API 文档
+- [cancel_online_file](../api/file/cancel-online-file) — cancel_online_file API 文档
+- [clean_stream_temp_file](../api/file/clean-stream-temp-file) — clean_stream_temp_file API 文档
+- [upload_file_stream](../api/file/upload-file-stream) — upload_file_stream API 文档
+- [download_file_stream](../api/file/download-file-stream) — download_file_stream API 文档
+- [download_file_record_stream](../api/file/download-file-record-stream) — download_file_record_stream API 文档
+- [download_file_image_stream](../api/file/download-file-image-stream) — download_file_image_stream API 文档

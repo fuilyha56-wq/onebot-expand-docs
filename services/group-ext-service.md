@@ -470,3 +470,12 @@ result = await service.set_group_msg_mask(group_id=..., mask=...)
 - [set_group_add_option](../api/group-ext/set-group-add-option) — set_group_add_option API 文档
 - [set_group_search](../api/group-ext/set-group-search) — set_group_search API 文档
 - [set_group_robot_add_option](../api/group-ext/set-group-robot-add-option) — set_group_robot_add_option API 文档
+- [set_group_kick_members](../api/group-ext/set-group-kick-members) — set_group_kick_members API 文档
+- [get_group_shut_list](../api/group-ext/get-group-shut-list) — get_group_shut_list API 文档
+- [get_group_ignored_notifies](../api/group-ext/get-group-ignored-notifies) — get_group_ignored_notifies API 文档
+- [get_group_ignore_add_request](../api/group-ext/get-group-ignore-add-request) — get_group_ignore_add_request API 文档
+- [get_group_info_ex](../api/group-ext/get-group-info-ex) — get_group_info_ex API 文档
+- [set_group_sign](../api/group-ext/set-group-sign) — set_group_sign API 文档
+- [get_group_signed_list](../api/group-ext/get-group-signed-list) — get_group_signed_list API 文档
+- [batch_delete_group_member](../api/group-ext/batch-delete-group-member) — batch_delete_group_member API 文档
+- [set_group_msg_mask](../api/group-ext/set-group-msg-mask) — set_group_msg_mask API 文档

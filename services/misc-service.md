@@ -389,6 +389,187 @@ result = await service.get_word_slices(content=...)
 
 ---
 
+### get_config
+
+获取协议端配置（LLBot 扩展）。
+
+对应 OneBot API: get_config
+
+`python
+async def get_config(
+    self,
+) -> dict[str, Any]:
+`
+
+**参数：** 无
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import MiscService
+
+service = MiscService(plugin)
+result = await service.get_config()
+`
+
+---
+
+### set_config
+
+设置协议端配置（LLBot 扩展）。
+
+对应 OneBot API: set_config
+
+`python
+async def set_config(
+    self,
+    config: dict,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| config | dict | - | 配置字典 |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import MiscService
+
+service = MiscService(plugin)
+result = await service.set_config(config=...)
+`
+
+---
+
+### get_event
+
+获取事件（LLBot 扩展）。
+
+对应 OneBot API: get_event
+
+`python
+async def get_event(
+    self,
+) -> dict[str, Any]:
+`
+
+**参数：** 无
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import MiscService
+
+service = MiscService(plugin)
+result = await service.get_event()
+`
+
+---
+
+### llonebot_debug
+
+调试接口，调用内部 API（LLBot 扩展）。
+
+对应 OneBot API: llonebot_debug
+
+`python
+async def llonebot_debug(
+    self,
+    api_class: str,
+    method: str,
+    args: list | None = None,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| api_class | str | - | API 类名 |
+| method | str | - | 方法名 |
+| args | list | None | 参数列表 |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import MiscService
+
+service = MiscService(plugin)
+result = await service.llonebot_debug(api_class=..., method=..., args=...)
+`
+
+---
+
+### scan_qrcode
+
+扫码登录（LLBot 扩展）。
+
+对应 OneBot API: scan_qrcode
+
+`python
+async def scan_qrcode(
+    self,
+    qrcode: str,
+) -> dict[str, Any]:
+`
+
+**参数：**
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| qrcode | str | - | 二维码内容 |
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import MiscService
+
+service = MiscService(plugin)
+result = await service.scan_qrcode(qrcode=...)
+`
+
+---
+
+### get_guild_list
+
+获取频道列表（NapCat/LLBot 扩展）。
+
+对应 OneBot API: get_guild_list
+
+`python
+async def get_guild_list(
+    self,
+) -> dict[str, Any]:
+`
+
+**参数：** 无
+
+**返回值：** dict[str, Any] — 适配器返回的响应字典。
+
+**示例：**
+
+`python
+from onebot_expand.services import MiscService
+
+service = MiscService(plugin)
+result = await service.get_guild_list()
+`
+
+---
+
 ## 相关 API
 
 - [`_get_model_show`](../api/misc/get-model-show) — _get_model_show API 文档
@@ -396,3 +577,16 @@ result = await service.get_word_slices(content=...)
 - [bot_exit](../api/misc/bot-exit) — bot_exit API 文档
 - [nc_get_packet_status](../api/misc/nc-get-packet-status) — nc_get_packet_status API 文档
 - [click_inline_keyboard_button](../api/misc/click-inline-keyboard-button) — click_inline_keyboard_button API 文档
+- [get_mini_app_ark](../api/misc/get-mini-app-ark) — get_mini_app_ark API 文档
+- [translate_en2zh](../api/misc/translate-en2zh) — translate_en2zh API 文档
+- [create_collection](../api/misc/create-collection) — create_collection API 文档
+- [get_collection_list](../api/misc/get-collection-list) — get_collection_list API 文档
+- [send_packet](../api/misc/send-packet) — send_packet API 文档
+- [handle_quick_operation](../api/misc/handle-quick-operation) — handle_quick_operation API 文档
+- [get_word_slices](../api/misc/get-word-slices) — get_word_slices API 文档
+- [get_config](../api/misc/get-config) — get_config API 文档
+- [set_config](../api/misc/set-config) — set_config API 文档
+- [get_event](../api/misc/get-event) — get_event API 文档
+- [llonebot_debug](../api/misc/llonebot-debug) — llonebot_debug API 文档
+- [scan_qrcode](../api/misc/scan-qrcode) — scan_qrcode API 文档
+- [get_guild_list](../api/misc/get-guild-list) — get_guild_list API 文档

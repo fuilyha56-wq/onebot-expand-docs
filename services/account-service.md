@@ -324,3 +324,8 @@ result = await service.get_robot_uin_range()
 - [get_friend_list](../api/account/get-friend-list) — get_friend_list API 文档
 - [get_group_list](../api/account/get-group-list) — get_group_list API 文档
 - [get_group_member_list](../api/account/get-group-member-list) — get_group_member_list API 文档
+- [get_group_member_info](../api/account/get-group-member-info) — get_group_member_info API 文档
+- [get_group_info](../api/account/get-group-info) — get_group_info API 文档
+- [get_group_detail_info](../api/account/get-group-detail-info) — get_group_detail_info API 文档
+- [get_group_honor_info](../api/account/get-group-honor-info) — get_group_honor_info API 文档
+- [get_robot_uin_range](../api/account/get-robot-uin-range) — get_robot_uin_range API 文档

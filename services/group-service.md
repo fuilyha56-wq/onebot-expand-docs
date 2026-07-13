@@ -376,3 +376,8 @@ result = await service.set_special_title(group_id=..., user_id=..., special_titl
 - [set_group_anonymous_ban](../api/group/set-group-anonymous-ban) — set_group_anonymous_ban API 文档
 - [set_group_whole_ban](../api/group/set-group-whole-ban) — set_group_whole_ban API 文档
 - [set_group_admin](../api/group/set-group-admin) — set_group_admin API 文档
+- [set_anonymous](../api/group/set-group-anonymous) — set_anonymous API 文档
+- [set_card](../api/group/set-group-card) — set_card API 文档
+- [set_group_name](../api/group/set-group-name) — set_group_name API 文档
+- [leave](../api/group/set-group-leave) — leave API 文档
+- [set_special_title](../api/group/set-group-special-title) — set_special_title API 文档

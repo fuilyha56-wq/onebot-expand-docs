@@ -78,4 +78,4 @@ if is_available():
 
 - [配置说明](./configuration) — 了解所有配置项
 - [架构设计](./architecture) — 了解 Tool/Service 双层设计
-- [API 文档](../api/) — 浏览全部 185 个 API
+- [API 文档](../api/) — 浏览全部 205 个 API

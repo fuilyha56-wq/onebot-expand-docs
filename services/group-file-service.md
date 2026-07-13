@@ -476,3 +476,11 @@ result = await service.set_group_file_forever(group_id=..., file_id=...)
 - [get_group_files_by_folder](../api/group-file/get-group-files-by-folder) — get_group_files_by_folder API 文档
 - [delete_group_file](../api/group-file/delete-group-file) — delete_group_file API 文档
 - [create_group_file_folder](../api/group-file/create-group-file-folder) — create_group_file_folder API 文档
+- [delete_group_folder](../api/group-file/delete-group-folder) — delete_group_folder API 文档
+- [get_group_file_system_info](../api/group-file/get-group-file-system-info) — get_group_file_system_info API 文档
+- [move_group_file](../api/group-file/move-group-file) — move_group_file API 文档
+- [rename_group_file](../api/group-file/rename-group-file) — rename_group_file API 文档
+- [rename_group_file_folder](../api/group-file/rename-group-file-folder) — rename_group_file_folder API 文档
+- [trans_group_file](../api/group-file/trans-group-file) — trans_group_file API 文档
+- [get_private_file_url](../api/group-file/get-private-file-url) — get_private_file_url API 文档
+- [set_group_file_forever](../api/group-file/set-group-file-forever) — set_group_file_forever API 文档
