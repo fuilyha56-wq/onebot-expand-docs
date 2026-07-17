@@ -504,6 +504,10 @@ body {
  * ============================================================================ */
 
 @media (max-width: 768px) {
+  .VPNavScreen {
+    z-index: 30;
+  }
+
   .vp-doc h1 {
     font-size: var(--md3-typescale-headline-large-size);
     line-height: var(--md3-typescale-headline-large-line-height);
