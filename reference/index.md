@@ -7,6 +7,7 @@
 - [OneBot v11 标准](./onebot-v11) — OneBot v11 标准 API 索引
 - [NapCat 扩展](./napcat) — NapCat 扩展 API 索引
 - [SnowLuma 扩展](./snowluma) — SnowLuma 扩展 API 索引
+- [LLBot 扩展](./llbot) — LLBot 扩展 API 索引与别名对照
 - [兼容性矩阵](./compatibility-matrix) — 完整四方兼容性对照表
 
 ## 四方来源说明

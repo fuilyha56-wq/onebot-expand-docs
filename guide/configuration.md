@@ -9,16 +9,16 @@
 ```toml
 [plugin]
 enabled = true       # 插件总开关
-version = "1.0.2"     # 插件版本
+config_version = "1.0.0"  # 配置文件版本，用于版本追踪与迁移
 ```
 
 ### `[adapter]` — 适配器配置
 
 ```toml
 [adapter]
-signature = "onebot_adapter:adapter:onebot_adapter"  # 适配器签名
-default_timeout = 30.0                                # 默认超时（秒）
-protocol_endpoint = "napcat"                          # 协议端后端（napcat/snowluma）
+adapter_signature = "onebot_adapter:adapter:onebot_adapter"  # 适配器签名
+default_timeout = 30.0                                         # 默认超时（秒）
+protocol = "napcat"                                            # napcat 或 snowluma
 ```
 
 ### `[api_switches]` — API 级独立开关
@@ -40,23 +40,31 @@ enable_get_qzone_msg_list = false     # QQ空间说说列表
 
 ```toml
 [emoji]
-enable_send_emoji = true       # 表情发送开关
-enable_emoji_like = true       # 表情回应开关
+enable_send_emoji = true              # 表情发送开关
+enable_reaction_emoji = true          # 表情回应开关
+send_emoji_enabled_ids = []           # 空列表表示允许所有表情 ID
+reaction_emoji_enabled_ids = []       # 空列表表示允许所有回应表情 ID
 ```
 
 ### `[file_transfer]` — 文件传输模式
 
 ```toml
 [file_transfer]
-mode = "path_mapper"  # 路径映射 / base64 / 共享卷
+enable_path_mapping = false
+enable_base64_transfer = true          # 默认使用 base64 传输
+enable_shared_volume = false
+path_mappings = []                     # 例如 ["/app/data|/mnt/shared"]
+shared_volume_root = ""
+auto_detect_mode = false
+max_base64_size_mb = 10
 ```
 
 ### `[protocol]` — 协议端后端与兼容模式
 
 ```toml
 [protocol]
-backend = "napcat"           # napcat / snowluma / llbot
-compat_mode = "auto"         # auto / strict / loose
+backend = "napcat"                 # napcat 或 snowluma
+snowluma_compat_mode = false         # 本地拦截 NapCat 专属 API
 ```
 
 ## API 开关格式

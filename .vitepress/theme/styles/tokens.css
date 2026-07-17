@@ -1,34 +1,34 @@
 /**
- * Material Design 3 设计令牌。
+ * 现代简约设计令牌。
  *
- * 基于 MD3 规范定义颜色系统、排版、形状、海拔、动效令牌。
- * 种子色为 OneBot 蓝 (#006495)，通过 Material Theme Builder 生成完整色板。
- * 同时提供亮色与暗色两套令牌，通过 [data-theme] 属性切换。
+ * 设计理念：克制色彩、充足留白、柔和阴影、清爽排版。
+ * 种子色为用户偏好的清新青色 (#AFFBFF)，衍生出完整色板。
+ * 亮色与暗色两套令牌，通过 [data-theme] 属性或 .dark 类切换。
  */
 
 /* ============================================================================
- * MD3 颜色系统 - 亮色主题
+ * 颜色系统 - 亮色主题
  * ============================================================================ */
 
 :root,
 :root[data-theme='light'] {
-  /* Primary - 主色调 */
-  --md3-sys-color-primary: #006495;
+  /* Primary - 主色调（基于 #AFFBFF 衍生，加深以保证文字对比度） */
+  --md3-sys-color-primary: #0088a8;
   --md3-sys-color-on-primary: #ffffff;
-  --md3-sys-color-primary-container: #c6e7ff;
-  --md3-sys-color-on-primary-container: #001e2e;
+  --md3-sys-color-primary-container: #AFFBFF;
+  --md3-sys-color-on-primary-container: #001e24;
 
-  /* Secondary - 次要色 */
-  --md3-sys-color-secondary: #4f616e;
+  /* Secondary - 次要色（中性灰青） */
+  --md3-sys-color-secondary: #4a6168;
   --md3-sys-color-on-secondary: #ffffff;
-  --md3-sys-color-secondary-container: #d3e5f5;
-  --md3-sys-color-on-secondary-container: #0a1e29;
+  --md3-sys-color-secondary-container: #cde7ed;
+  --md3-sys-color-on-secondary-container: #051f24;
 
-  /* Tertiary - 第三色 */
-  --md3-sys-color-tertiary: #5d5792;
+  /* Tertiary - 第三色（柔和紫，用于专属标记） */
+  --md3-sys-color-tertiary: #5b5d7a;
   --md3-sys-color-on-tertiary: #ffffff;
-  --md3-sys-color-tertiary-container: #e3deff;
-  --md3-sys-color-on-tertiary-container: #1a1147;
+  --md3-sys-color-tertiary-container: #e1e0ff;
+  --md3-sys-color-on-tertiary-container: #181a36;
 
   /* Error - 错误色 */
   --md3-sys-color-error: #ba1a1a;
@@ -36,70 +36,74 @@
   --md3-sys-color-error-container: #ffdad6;
   --md3-sys-color-on-error-container: #410002;
 
-  /* Success - 成功色（MD3 扩展） */
+  /* Success - 成功色 */
   --md3-sys-color-success: #006e2c;
   --md3-sys-color-on-success: #ffffff;
-  --md3-sys-color-success-container: #9af7a8;
+  --md3-sys-color-success-container: #c8f5d0;
   --md3-sys-color-on-success-container: #002107;
 
-  /* Warning - 警告色（MD3 扩展） */
+  /* Warning - 警告色 */
   --md3-sys-color-warning: #7c5800;
   --md3-sys-color-on-warning: #ffffff;
-  --md3-sys-color-warning-container: #ffdcb8;
+  --md3-sys-color-warning-container: #ffddb8;
   --md3-sys-color-on-warning-container: #271900;
 
-  /* Background & Surface - 背景与表面 */
-  --md3-sys-color-background: #f8fafd;
+  /* Background & Surface - 更纯净的背景，带一丝青色调 */
+  --md3-sys-color-background: #fbfdfe;
   --md3-sys-color-on-background: #191c1e;
-  --md3-sys-color-surface: #f8fafd;
+  --md3-sys-color-surface: #fbfdfe;
   --md3-sys-color-on-surface: #191c1e;
-  --md3-sys-color-surface-variant: #dce3eb;
+  --md3-sys-color-surface-variant: #dce3e5;
   --md3-sys-color-on-surface-variant: #40484c;
 
-  /* Surface Container - 表面容器层级 */
+  /* Surface Container - 更细腻的层级递进 */
   --md3-sys-color-surface-container-lowest: #ffffff;
-  --md3-sys-color-surface-container-low: #f2f4f8;
-  --md3-sys-color-surface-container: #eceef2;
-  --md3-sys-color-surface-container-high: #e6e9ed;
-  --md3-sys-color-surface-container-highest: #e0e3e8;
+  --md3-sys-color-surface-container-low: #f5f8f9;
+  --md3-sys-color-surface-container: #eff2f4;
+  --md3-sys-color-surface-container-high: #e9edef;
+  --md3-sys-color-surface-container-highest: #e3e7e9;
 
-  /* Outline - 描边 */
+  /* Outline - 描边（更淡） */
   --md3-sys-color-outline: #70787c;
-  --md3-sys-color-outline-variant: #c0c7cd;
+  --md3-sys-color-outline-variant: #c0c7ca;
 
   /* Inverse - 反色 */
   --md3-sys-color-inverse-surface: #2d3133;
   --md3-sys-color-inverse-on-surface: #eff1f3;
-  --md3-sys-color-inverse-primary: #7fd0ff;
+  --md3-sys-color-inverse-primary: #4fd8f5;
 
   /* Shadow - 阴影 */
   --md3-sys-color-shadow: #000000;
   --md3-sys-color-scrim: #000000;
+
+  /* 强调色 - 直接使用 #AFFBFF 用于装饰性元素 */
+  --md3-sys-color-accent: #AFFBFF;
+  --md3-sys-color-accent-soft: #d8fdff;
 }
 
 /* ============================================================================
- * MD3 颜色系统 - 暗色主题
+ * 颜色系统 - 暗色主题
  * ============================================================================ */
 
 :root[data-theme='dark'],
 .dark {
-  /* Primary */
-  --md3-sys-color-primary: #7fd0ff;
-  --md3-sys-color-on-primary: #00344c;
-  --md3-sys-color-primary-container: #004b6c;
-  --md3-sys-color-on-primary-container: #c6e7ff;
+  /* Primary - 暗色下用 #AFFBFF 的亮版 */
+  --md3-sys-color-primary: #4fd8f5;
+  --md3-sys-color-on-primary: #003644;
+  --md3-sys-color-primary-container: #004e62;
+  --md3-sys-color-on-primary-container: #AFFBFF;
 
   /* Secondary */
-  --md3-sys-color-secondary: #b7c9da;
-  --md3-sys-color-on-secondary: #21303b;
-  --md3-sys-color-secondary-container: #374752;
-  --md3-sys-color-on-secondary-container: #d3e5f5;
+  --md3-sys-color-secondary: #b0cbd1;
+  --md3-sys-color-on-secondary: #1b353b;
+  --md3-sys-color-secondary-container: #324b52;
+  --md3-sys-color-on-secondary-container: #cde7ed;
 
   /* Tertiary */
-  --md3-sys-color-tertiary: #c7c0ff;
-  --md3-sys-color-on-tertiary: #2f295d;
-  --md3-sys-color-tertiary-container: #454075;
-  --md3-sys-color-on-tertiary-container: #e3deff;
+  --md3-sys-color-tertiary: #c4c3ff;
+  --md3-sys-color-on-tertiary: #2c2f4a;
+  --md3-sys-color-tertiary-container: #434668;
+  --md3-sys-color-on-tertiary-container: #e1e0ff;
 
   /* Error */
   --md3-sys-color-error: #ffb4ab;
@@ -111,153 +115,171 @@
   --md3-sys-color-success: #7bda8b;
   --md3-sys-color-on-success: #00390f;
   --md3-sys-color-success-container: #00531a;
-  --md3-sys-color-on-success-container: #9af7a8;
+  --md3-sys-color-on-success-container: #c8f5d0;
 
   /* Warning */
   --md3-sys-color-warning: #f6bd4c;
   --md3-sys-color-on-warning: #412d00;
   --md3-sys-color-warning-container: #5d4200;
-  --md3-sys-color-on-warning-container: #ffdcb8;
+  --md3-sys-color-on-warning-container: #ffddb8;
 
-  /* Background & Surface */
-  --md3-sys-color-background: #191c1e;
-  --md3-sys-color-on-background: #e0e3e8;
-  --md3-sys-color-surface: #191c1e;
-  --md3-sys-color-on-surface: #e0e3e8;
+  /* Background & Surface - 暗色更深沉，带青色调 */
+  --md3-sys-color-background: #0f1416;
+  --md3-sys-color-on-background: #e0e3e5;
+  --md3-sys-color-surface: #0f1416;
+  --md3-sys-color-on-surface: #e0e3e5;
   --md3-sys-color-surface-variant: #40484c;
-  --md3-sys-color-on-surface-variant: #c0c7cd;
+  --md3-sys-color-on-surface-variant: #c0c7ca;
 
   /* Surface Container */
-  --md3-sys-color-surface-container-lowest: #131517;
-  --md3-sys-color-surface-container-low: #1c1f22;
-  --md3-sys-color-surface-container: #202326;
-  --md3-sys-color-surface-container-high: #25282a;
-  --md3-sys-color-surface-container-highest: #2a2d30;
+  --md3-sys-color-surface-container-lowest: #0a0e10;
+  --md3-sys-color-surface-container-low: #1a1f21;
+  --md3-sys-color-surface-container: #1e2326;
+  --md3-sys-color-surface-container-high: #232829;
+  --md3-sys-color-surface-container-highest: #2d3233;
 
   /* Outline */
   --md3-sys-color-outline: #8a9296;
   --md3-sys-color-outline-variant: #40484c;
 
   /* Inverse */
-  --md3-sys-color-inverse-surface: #e0e3e8;
+  --md3-sys-color-inverse-surface: #e0e3e5;
   --md3-sys-color-inverse-on-surface: #2d3133;
-  --md3-sys-color-inverse-primary: #006495;
+  --md3-sys-color-inverse-primary: #0088a8;
 
   /* Shadow */
   --md3-sys-color-shadow: #000000;
   --md3-sys-color-scrim: #000000;
+
+  /* 强调色 - 暗色下用 #AFFBFF 本色 */
+  --md3-sys-color-accent: #AFFBFF;
+  --md3-sys-color-accent-soft: #1a3a40;
 }
 
 /* ============================================================================
- * MD3 排版 Type Scale
+ * 排版 Type Scale - 现代简约
  * ============================================================================ */
 
 :root {
-  /* 字体族 */
-  --md3-typescale-font-family: 'Roboto', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
-  --md3-typescale-code-font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  /* 字体族 - 优先系统字体栈，零网络请求 */
+  --md3-typescale-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC',
+    'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --md3-typescale-code-font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code',
+    Consolas, 'Liberation Mono', monospace;
 
-  /* Display - 展示字 */
-  --md3-typescale-display-large-size: 3.5625rem;   /* 57px */
-  --md3-typescale-display-large-line-height: 4rem; /* 64px */
-  --md3-typescale-display-large-weight: 400;
-  --md3-typescale-display-medium-size: 2.8125rem;  /* 45px */
-  --md3-typescale-display-medium-line-height: 3.25rem; /* 52px */
-  --md3-typescale-display-medium-weight: 400;
-  --md3-typescale-display-small-size: 2.25rem;    /* 36px */
-  --md3-typescale-display-small-line-height: 2.75rem; /* 44px */
-  --md3-typescale-display-small-weight: 400;
+  /* Display - 展示字（首页 Hero） */
+  --md3-typescale-display-large-size: 3.5rem;        /* 56px */
+  --md3-typescale-display-large-line-height: 4rem;   /* 64px */
+  --md3-typescale-display-large-weight: 700;
+  --md3-typescale-display-large-tracking: -0.02em;
+
+  --md3-typescale-display-medium-size: 2.75rem;      /* 44px */
+  --md3-typescale-display-medium-line-height: 3.25rem;
+  --md3-typescale-display-medium-weight: 700;
+  --md3-typescale-display-medium-tracking: -0.015em;
+
+  --md3-typescale-display-small-size: 2.25rem;       /* 36px */
+  --md3-typescale-display-small-line-height: 2.75rem;
+  --md3-typescale-display-small-weight: 700;
+  --md3-typescale-display-small-tracking: -0.01em;
 
   /* Headline - 标题字 */
-  --md3-typescale-headline-large-size: 2rem;       /* 32px */
-  --md3-typescale-headline-large-line-height: 2.5rem; /* 40px */
-  --md3-typescale-headline-large-weight: 400;
-  --md3-typescale-headline-medium-size: 1.75rem;  /* 28px */
-  --md3-typescale-headline-medium-line-height: 2.25rem; /* 36px */
-  --md3-typescale-headline-medium-weight: 400;
-  --md3-typescale-headline-small-size: 1.4375rem; /* 23px */
-  --md3-typescale-headline-small-line-height: 2rem; /* 32px */
-  --md3-typescale-headline-small-weight: 400;
+  --md3-typescale-headline-large-size: 2rem;         /* 32px */
+  --md3-typescale-headline-large-line-height: 2.5rem;
+  --md3-typescale-headline-large-weight: 600;
+
+  --md3-typescale-headline-medium-size: 1.75rem;     /* 28px */
+  --md3-typescale-headline-medium-line-height: 2.25rem;
+  --md3-typescale-headline-medium-weight: 600;
+
+  --md3-typescale-headline-small-size: 1.4375rem;    /* 23px */
+  --md3-typescale-headline-small-line-height: 2rem;
+  --md3-typescale-headline-small-weight: 600;
 
   /* Title - 标题 */
-  --md3-typescale-title-large-size: 1.375rem;     /* 22px */
-  --md3-typescale-title-large-line-height: 1.75rem; /* 28px */
-  --md3-typescale-title-large-weight: 500;
-  --md3-typescale-title-medium-size: 1rem;        /* 16px */
-  --md3-typescale-title-medium-line-height: 1.5rem; /* 24px */
-  --md3-typescale-title-medium-weight: 500;
-  --md3-typescale-title-small-size: 0.875rem;     /* 14px */
-  --md3-typescale-title-small-line-height: 1.25rem; /* 20px */
-  --md3-typescale-title-small-weight: 500;
+  --md3-typescale-title-large-size: 1.375rem;        /* 22px */
+  --md3-typescale-title-large-line-height: 1.75rem;
+  --md3-typescale-title-large-weight: 600;
 
-  /* Body - 正文 */
-  --md3-typescale-body-large-size: 1rem;           /* 16px */
-  --md3-typescale-body-large-line-height: 1.5rem;  /* 24px */
+  --md3-typescale-title-medium-size: 1rem;           /* 16px */
+  --md3-typescale-title-medium-line-height: 1.5rem;
+  --md3-typescale-title-medium-weight: 600;
+
+  --md3-typescale-title-small-size: 0.875rem;        /* 14px */
+  --md3-typescale-title-small-line-height: 1.25rem;
+  --md3-typescale-title-small-weight: 600;
+
+  /* Body - 正文（行高更宽松，提升可读性） */
+  --md3-typescale-body-large-size: 1rem;             /* 16px */
+  --md3-typescale-body-large-line-height: 1.75rem;   /* 28px - 更大行高 */
   --md3-typescale-body-large-weight: 400;
-  --md3-typescale-body-medium-size: 0.875rem;      /* 14px */
-  --md3-typescale-body-medium-line-height: 1.25rem; /* 20px */
+
+  --md3-typescale-body-medium-size: 0.875rem;        /* 14px */
+  --md3-typescale-body-medium-line-height: 1.5rem;
   --md3-typescale-body-medium-weight: 400;
-  --md3-typescale-body-small-size: 0.75rem;        /* 12px */
-  --md3-typescale-body-small-line-height: 1rem;    /* 16px */
+
+  --md3-typescale-body-small-size: 0.75rem;          /* 12px */
+  --md3-typescale-body-small-line-height: 1.125rem;
   --md3-typescale-body-small-weight: 400;
 
   /* Label - 标签 */
-  --md3-typescale-label-large-size: 0.875rem;      /* 14px */
-  --md3-typescale-label-large-line-height: 1.25rem; /* 20px */
+  --md3-typescale-label-large-size: 0.875rem;        /* 14px */
+  --md3-typescale-label-large-line-height: 1.25rem;
   --md3-typescale-label-large-weight: 500;
-  --md3-typescale-label-medium-size: 0.75rem;      /* 12px */
-  --md3-typescale-label-medium-line-height: 1rem;  /* 16px */
+
+  --md3-typescale-label-medium-size: 0.75rem;        /* 12px */
+  --md3-typescale-label-medium-line-height: 1rem;
   --md3-typescale-label-medium-weight: 500;
-  --md3-typescale-label-small-size: 0.6875rem;     /* 11px */
-  --md3-typescale-label-small-line-height: 1rem;   /* 16px */
+
+  --md3-typescale-label-small-size: 0.6875rem;       /* 11px */
+  --md3-typescale-label-small-line-height: 1rem;
   --md3-typescale-label-small-weight: 500;
 }
 
 /* ============================================================================
- * MD3 形状 Shape Scale
+ * 形状 Shape Scale - 更统一的圆角
  * ============================================================================ */
 
 :root {
   --md3-shape-corner-none: 0;
   --md3-shape-corner-extra-small: 4px;
-  --md3-shape-corner-small: 8px;
-  --md3-shape-corner-medium: 12px;
-  --md3-shape-corner-large: 16px;
-  --md3-shape-corner-extra-large: 28px;
+  --md3-shape-corner-small: 6px;
+  --md3-shape-corner-medium: 8px;
+  --md3-shape-corner-large: 12px;
+  --md3-shape-corner-extra-large: 16px;
   --md3-shape-corner-full: 9999px;
 }
 
 /* ============================================================================
- * MD3 海拔 Elevation
- * 使用 box-shadow + 表面色叠加模拟 MD3 海拔
+ * 海拔 Elevation - 更柔和的阴影
  * ============================================================================ */
 
 :root {
   /* Elevation 0 - 无海拔 */
   --md3-elevation-0: none;
 
-  /* Elevation 1 - 低海拔 */
-  --md3-elevation-1: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  /* Elevation 1 - 极淡阴影（卡片默认） */
+  --md3-elevation-1: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
 
-  /* Elevation 2 - 中海拔 */
-  --md3-elevation-2: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+  /* Elevation 2 - 淡阴影（悬浮） */
+  --md3-elevation-2: 0 2px 4px rgba(0, 0, 0, 0.04), 0 3px 6px rgba(0, 0, 0, 0.08);
 
-  /* Elevation 3 - 较高海拔 */
-  --md3-elevation-3: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+  /* Elevation 3 - 中等阴影（弹层） */
+  --md3-elevation-3: 0 4px 8px rgba(0, 0, 0, 0.06), 0 6px 12px rgba(0, 0, 0, 0.08);
 
-  /* Elevation 4 - 高海拔 */
-  --md3-elevation-4: 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 6px 10px 4px rgba(0, 0, 0, 0.15);
+  /* Elevation 4 - 较高阴影 */
+  --md3-elevation-4: 0 6px 12px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.1);
 
-  /* Elevation 5 - 最高海拔 */
-  --md3-elevation-5: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 8px 12px 6px rgba(0, 0, 0, 0.15);
+  /* Elevation 5 - 最高阴影 */
+  --md3-elevation-5: 0 8px 16px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* ============================================================================
- * MD3 动效 Motion
+ * 动效 Motion - 更快的过渡
  * ============================================================================ */
 
 :root {
-  /* Duration - 持续时间 */
+  /* Duration - 持续时间（偏快，现代感） */
   --md3-motion-duration-short-1: 50ms;
   --md3-motion-duration-short-2: 100ms;
   --md3-motion-duration-short-3: 150ms;
@@ -279,12 +301,26 @@
 }
 
 /* ============================================================================
- * MD3 状态层 State Layer
+ * 状态层 State Layer
  * ============================================================================ */
 
 :root {
-  --md3-state-layer-opacity-hover: 0.08;
-  --md3-state-layer-opacity-focus: 0.12;
-  --md3-state-layer-opacity-pressed: 0.12;
-  --md3-state-layer-opacity-dragged: 0.16;
+  --md3-state-layer-opacity-hover: 0.06;
+  --md3-state-layer-opacity-focus: 0.1;
+  --md3-state-layer-opacity-pressed: 0.1;
+  --md3-state-layer-opacity-dragged: 0.14;
+}
+
+/* ============================================================================
+ * 布局间距 - 现代简约的留白系统
+ * ============================================================================ */
+
+:root {
+  /* 内容区最大宽度 */
+  --layout-content-max-width: 720px;
+
+  /* 章节间距 */
+  --layout-section-gap: 3rem;
+  --layout-block-gap: 1.5rem;
+  --layout-element-gap: 1rem;
 }

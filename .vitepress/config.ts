@@ -15,12 +15,12 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
-  // API 详情页逐步补充中，暂时忽略所有死链接
+  // 构建时校验站内链接，避免导航与 API 文档脱节。
   ignoreDeadLinks: false,
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-    ['meta', { name: 'theme-color', content: '#006495' }],
+    ['meta', { name: 'theme-color', content: '#AFFBFF' }],
   ],
 
   themeConfig: {
@@ -203,6 +203,7 @@ export default defineConfig({
             { text: 'OneBot v11 标准', link: '/reference/onebot-v11' },
             { text: 'NapCat 扩展', link: '/reference/napcat' },
             { text: 'SnowLuma 扩展', link: '/reference/snowluma' },
+            { text: 'LLBot 扩展', link: '/reference/llbot' },
             { text: '兼容性矩阵', link: '/reference/compatibility-matrix' },
           ],
         },
@@ -212,27 +213,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/fuilyha56-wq/onebot-expand-docs' },
     ],
-
-    search: {
-      provider: 'local',
-      options: {
-        translations: {
-          button: {
-            buttonText: '搜索文档',
-            buttonAriaLabel: '搜索文档',
-          },
-          modal: {
-            noResultsText: '无法找到相关结果',
-            resetButtonTitle: '清除查询条件',
-            footer: {
-              selectText: '选择',
-              navigateText: '切换',
-              closeText: '关闭',
-            },
-          },
-        },
-      },
-    },
 
     outline: {
       level: [2, 3],
@@ -250,7 +230,7 @@ export default defineConfig({
     sidebarMenuLabel: '菜单',
 
     editLink: {
-      pattern: 'https://github.com/Lycoris/onebot-expand-docs/edit/main/:path',
+      pattern: 'https://github.com/fuilyha56-wq/onebot-expand-docs/edit/master/:path',
       text: '在 GitHub 上编辑此页',
     },
   } satisfies ThemeConfig,

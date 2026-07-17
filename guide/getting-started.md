@@ -31,12 +31,12 @@ plugins/
 ```toml
 [plugin]
 enabled = true
-version = "1.0.2"
+config_version = "1.0.0"
 
 [adapter]
-signature = "onebot_adapter:adapter:onebot_adapter"
+adapter_signature = "onebot_adapter:adapter:onebot_adapter"
 default_timeout = 30.0
-protocol_endpoint = "napcat"  # 或 "snowluma"
+protocol = "napcat"  # 可选 napcat 或 snowluma
 
 [api_switches]
 # Tool 总开关（默认 false，需显式开启）

@@ -1,6 +1,6 @@
-# 完整兼容性矩阵
+# 运行时兼容性矩阵
 
-下表列出 OneBot Expand 插件全部 205 个 API 在 OneBot v11 / NapCat / SnowLuma 三方的兼容性。LLBot 扩展 API（20 个）通过 NapCat 列标记兼容性（LLBot 基于 NapCat 扩展，NapCat 兼容即 LLBot 兼容）。
+下表列出 OneBot Expand 插件全部 205 个 API 在 OneBot v11、NapCat 与 SnowLuma 三方的运行时兼容性标记。LLBot 不是 NapCat 的等价实现，不能由 NapCat 列推导其支持范围；LLBot 已封装的 20 个扩展 action 与别名对照见 [LLBot 扩展](./llbot)。
 
 ## 图例
 
