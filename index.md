@@ -4,7 +4,7 @@ layout: home
 hero:
   name: OneBot Expand
   text: OneBot v11 + NapCat 扩展 API 完整封装
-  tagline: 205 个 Tool 组件 · 23 个 Service 组件 · NapCat / SnowLuma / LLBot 三协议端支持
+  tagline: 206 个 Tool 组件 · 23 个 Service 组件 · NapCat / SnowLuma / LLBot 三协议端支持
   image:
     src: /logo.svg
     alt: OneBot Expand
@@ -18,7 +18,7 @@ hero:
 
 features:
   - icon: 🛠️
-    title: 205 个 Tool 组件
+    title: 206 个 Tool 组件
     details: 每个 API 对应一个 Tool 类，供 LLM 直接调用，覆盖消息、群操作、文件、账号、扩展等 21 个功能域，支持 NapCat / SnowLuma / LLBot 三方协议端。
   - icon: 🧩
     title: 23 个 Service 组件

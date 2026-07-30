@@ -155,7 +155,7 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/cred/' }],
         },
         {
-          text: '机型/其他 (18)',
+          text: '机型/其他 (19)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/misc/' }],
         },

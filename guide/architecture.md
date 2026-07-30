@@ -15,21 +15,26 @@ OneBot Expand 采用双层组件设计，确保 LLM 调用与程序化调用两�
 ## 调用链
 
 ```
-LLM 调用 → Tool.execute（总开关 + 独立开关检查）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma/LLBot
-其他插件 → Service.method（独立开关检查）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma/LLBot
+LLM 调用 → Tool.execute（仅已注册的 Tool 可被调用）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma/LLBot
+其他插件 → Service.method（始终可用）→ _call_onebot_api → onebot_adapter → NapCat/SnowLuma/LLBot
 ```
+
+::: info v1.0.10+ 注册制 vs 运行时拦截
+旧版本采用运行时拦截：Tool 始终注册但执行时检查开关，返回"禁用"响应。
+v1.0.10+ 改为注册制：未启用的 Tool 根本不注册到全局注册表，LLM 完全看不到这些 Tool，行为更干净。
+:::
 
 ## 关键机制
 
-### 1. Tool 总开关 `enable_all_tools`
+### 1. Tool 注册机制（v1.0.10+）
 
-位于 `api_switches` 配置节，**默认 `false`**：
+插件的 `get_components()` 方法返回 `ALL_SERVICES + self._get_enabled_tools()`：
 
-- **`true`**：各 Tool 的独立开关 `enable_<action>` 生效，可单独启停
-- **`false`（默认）**：所有 Tool 一律禁用，LLM 调用任何 Tool 都直接返回禁用响应
+- **`enable_all_tools = false`（默认）**：`_get_enabled_tools()` 返回空列表，不注册任何 Tool，子开关无效
+- **`enable_all_tools = true`**：`_get_enabled_tools()` 按子开关过滤，仅注册 `enable_<action>=true` 的 Tool
 
-::: tip Service 不受总开关影响
-Service 路径始终启用，确保其他插件通过 Service 调用的路径不会中断。
+::: tip Service 始终注册
+Service 层（23 个）通过 `ALL_SERVICES` 常量始终注册，不受总开关影响，确保其他插件程序化调用路径畅通。
 :::
 
 ### 2. Tool 独立开关 `enable_<action>`

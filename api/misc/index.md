@@ -1,6 +1,6 @@
 # 机型/其他 API
 
-本分类包含 18 个机型/其他 API，涵盖机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词/配置/事件/调试/扫码/频道等功能。
+本分类包含 19 个机型/其他 API，涵盖机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词/配置/事件/调试/扫码/频道/发包等功能。
 
 ## API 列表
 
@@ -24,3 +24,4 @@
 | [`llonebot_debug`](./llonebot-debug) | 调试接口 | LLBot | ✓ | ✗ |
 | [`scan_qrcode`](./scan-qrcode) | 扫码登录 | LLBot | ✓ | ✗ |
 | [`get_guild_list`](./get-guild-list) | 获取频道列表 | NapCat+LLBot | ✓ | ✗ |
+| [`send_pb`](./send-pb) | LLBot 发送原始 SSO 包 | LLBot | ✗ | ✗ |

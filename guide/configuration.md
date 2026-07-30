@@ -32,8 +32,9 @@ enable_get_qzone_msg_list = false     # QQ空间说说列表
 # ... 共 205 个 enable_<action> 开关
 ```
 
-::: warning 默认全部关闭
-所有 `enable_<action>` 开关默认为 `false`。即使 `enable_all_tools = true`，也需要显式将需要的 API 开关设为 `true`。
+::: warning 总开关优先
+- **`enable_all_tools = false`（默认）**：所有 Tool 不注册到全局注册表，子开关无效，LLM 无法调用任何 Tool
+- **`enable_all_tools = true`**：各 Tool 的独立开关 `enable_<action>` 生效，需显式开启需要的 API
 :::
 
 ### `[emoji]` — 表情发送与回应
@@ -77,6 +78,12 @@ enable_all_tools = true          # Tool 总开关（默认 false，需显式开�
 enable_send_group_msg = true     # 群聊消息发送（默认 false）
 enable_get_qzone_msg_list = true # QQ空间说说列表（默认 false）
 ```
+
+::: info v1.0.10+ 注册机制变更
+从 v1.0.10 起，Tool 注册由 `get_components()` 动态控制：
+- `enable_all_tools = false`：不注册任何 Tool 到全局注册表，LLM 完全无法调用
+- `enable_all_tools = true`：按子开关选择性注册，仅 `enable_<action>=true` 的 Tool 可用
+:::
 
 ## 下一步
 

@@ -253,6 +253,7 @@
 | `llonebot_debug` | 调试接口 | ❌ | ✅ | ❌ |
 | `scan_qrcode` | 扫码登录 | ❌ | ✅ | ❌ |
 | `get_guild_list` | 获取频道列表 | ❌ | ✅ | ❌ |
+| `send_pb` | LLBot 发送原始 SSO 包 | ❌ | ❌ | ❌ |
 
 ## 闪传 (flash)
 

@@ -1,6 +1,6 @@
 # API 总览
 
-OneBot Expand 插件共封装 **205 个 API**（含 18 个别名），按 21 个功能域分类。每个 API 同时标记在 OneBot v11 / NapCat / SnowLuma 三方的兼容性。
+OneBot Expand 插件共封装 **206 个 API**（含 18 个别名），按 21 个功能域分类。每个 API 同时标记在 OneBot v11 / NapCat / SnowLuma 三方的兼容性。
 
 ## 功能域导航
 
@@ -21,7 +21,7 @@ OneBot Expand 插件共封装 **205 个 API**（含 18 个别名），按 21 个
 | [表情/收藏扩展](./emoji-ext/) | 12 | 收藏表情CRUD/详情/备注/移动/回应/推荐表情 |
 | [AI 语音](./ai-voice/) | 3 | AI角色/语音生成 |
 | [凭证/安全/下载](./cred/) | 8 | clientkey/credentials/rkey/URL安全/OCR/下载/解密 |
-| [机型/其他](./misc/) | 18 | 机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词/配置/事件/调试/扫码/频道 |
+| [机型/其他](./misc/) | 19 | 机型/退出/包状态/内联键盘/小程序/翻译/收藏/SSO包/快速操作/分词/配置/事件/调试/扫码/频道/发包 |
 | [闪传](./flash/) | 14 | 闪传任务/消息/文件列表/URL/分享/下载/文件集CRUD/上传/重分享 |
 | [群相册](./group-album/) | 9 | 群相册列表/上传/评论/点赞/删除/创建 |
 | [群待办](./group-todo/) | 3 | 群待办设置/完成/取消 |
@@ -38,8 +38,8 @@ OneBot Expand 插件共封装 **205 个 API**（含 18 个别名），按 21 个
 
 ::: tip 说明
 - **OneBot v11 标准**：仅统计 26 个公开 API，其余为各协议端扩展
-- **NapCat**：支持插件 205 个 API 中的 187 个，其余 18 个为 SnowLuma 独有或插件扩展
-- **SnowLuma**：支持插件 205 个 API 中的 169 个，其余 36 个为 NapCat 专属或 LLBot 扩展
+- **NapCat**：支持插件 206 个 API 中的 187 个，其余 19 个为 SnowLuma 独有或插件扩展
+- **SnowLuma**：支持插件 206 个 API 中的 169 个，其余 37 个为 NapCat 专属或 LLBot 扩展
 :::
 
 完整的 action × 三方兼容性矩阵见 [兼容性矩阵](../reference/compatibility-matrix)。
