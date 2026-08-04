@@ -1,6 +1,6 @@
 # 用户信息扩展 API
 
-本分类包含 13 个用户信息扩展 API，涵盖好友备注/分类/单向好友/资料/头像/点赞等功能。
+本分类包含 15 个用户信息扩展 API，涵盖好友备注/分类/单向好友/资料/头像/点赞/个性装扮等功能。
 
 ## API 列表
 
@@ -19,3 +19,5 @@
 | [`get_profile_like_count`](./get-profile-like-count) | 获取用户点赞总数 | LLBot | ✓ | ✗ |
 | [`get_qq_avatar`](./get-qq-avatar) | 获取QQ头像URL | LLBot | ✓ | ✗ |
 | [`set_friend_category`](./set-friend-category) | 设置好友分类 | LLBot | ✓ | ✗ |
+| [`_get_friend_dress`](./get-friend-dress) | 获取好友个性装扮 | SnowLuma | ✗ | ✓ |
+| [`set_friends_category`](./set-friends-category) | 按分类 ID 或名称设置好友分类 | SnowLuma | ✗ | ✓ |

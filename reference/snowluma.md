@@ -19,6 +19,8 @@ SnowLuma 是基于 TypeScript 的协议转换框架，为 QQ 客户端提供 One
 | `modify_custom_face` | 修改收藏表情备注 | [查看](../api/emoji-ext/modify-custom-face) |
 | `move_custom_face_to_front` | 收藏表情移到最前 | [查看](../api/emoji-ext/move-custom-face-to-front) |
 | `set_group_reaction` | 群聊消息表情回应 | [查看](../api/emoji-ext/set-group-reaction) |
+| `_get_friend_dress` | 获取好友个性装扮 | [查看](../api/user-ext/get-friend-dress) |
+| `set_friends_category` | 按分类 ID 或名称设置好友分类 | [查看](../api/user-ext/set-friends-category) |
 | `share_peer` | 分享用户/群Ark卡片 | [查看](../api/ark/share-peer) |
 | `share_group_ex` | 分享群Ark卡片 | [查看](../api/ark/share-group-ex) |
 
@@ -38,6 +40,9 @@ SnowLuma 几乎实现了所有 NapCat 扩展 API。以下 API 在 SnowLuma 中**
 | `fetch_custom_face_detail` | 获取收藏表情详情 | NapCat 专属 |
 | `set_custom_face_desc` | 修改收藏表情描述 | NapCat 专属 |
 | `get_word_slices` | go-cqhttp 分词 | SnowLuma 未实现 |
+| `set_group_member_invite_policy` | 设置群成员邀请策略 | NapCat 专属 |
+| `set_group_member_permissions` | 设置群成员功能权限 | NapCat 专属 |
+| `set_group_new_member_history_visibility` | 设置新成员历史消息可见性 | NapCat 专属 |
 
 ## 上游文档
 

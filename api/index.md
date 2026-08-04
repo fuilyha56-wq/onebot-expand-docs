@@ -1,13 +1,13 @@
 # API 总览
 
-OneBot Expand 插件共封装 **206 个 API**（含 18 个别名），按 21 个功能域分类。每个 API 同时标记在 OneBot v11 / NapCat / SnowLuma 三方的兼容性。
+OneBot Expand 插件共封装 **211 个主名 API**，另有 **18 个别名**，按 21 个功能域分类。每个 API 同时标记在 OneBot v11 / NapCat / SnowLuma / LLBot 四方的兼容性。
 
 ## 功能域导航
 
 | 功能域 | API 数 | 说明 |
 |---|---|---|
 | [消息](./message/) | 20 | 群/私聊消息发送、转发、撤回、已读标记 |
-| [群操作](./group/) | 10 | 禁言、踢出、管理、头衔等 |
+| [群操作](./group/) | 13 | 禁言、踢出、管理、头衔、成员权限与邀请策略等 |
 | [文件操作](./file/) | 16 | 群/私聊文件上传、图片/语音获取、在线文件、流式传输 |
 | [账号信息](./account/) | 10 | 登录号、好友、群列表与详情查询 |
 | [NapCat 扩展](./napcat-ext/) | 15 | Cookies、CSRF、状态、精华消息等 |
@@ -15,7 +15,7 @@ OneBot Expand 插件共封装 **206 个 API**（含 18 个别名），按 21 个
 | [群公告](./group-notice/) | 3 | 群公告发布/查询/删除 |
 | [群管理扩展](./group-ext/) | 14 | 群头像/备注/加群选项/签到/打卡列表/批量踢出/消息屏蔽 |
 | [请求处理](./request/) | 5 | 好友/加群请求处理 |
-| [用户信息扩展](./user-ext/) | 13 | 好友备注/分类/单向好友/资料/头像/点赞 |
+| [用户信息扩展](./user-ext/) | 15 | 好友备注/分类/单向好友/资料/头像/点赞/个性装扮 |
 | [在线状态](./status/) | 4 | 在线状态/DIY状态/输入状态 |
 | [戳一拍](./poke/) | 2 | 好友/群戳一拍 |
 | [表情/收藏扩展](./emoji-ext/) | 12 | 收藏表情CRUD/详情/备注/移动/回应/推荐表情 |
@@ -28,18 +28,20 @@ OneBot Expand 插件共封装 **206 个 API**（含 18 个别名），按 21 个
 | [QQ 空间](./qzone/) | 9 | 说说列表/动态/发表/删除/点赞/评论/拉黑/权限 |
 | [Ark 分享](./ark/) | 4 | 用户/群Ark卡片分享 |
 
-## 三方兼容性统计
+## 四方兼容性统计
 
 | 协议端 | 支持 API 数 | 兼容率 |
 |---|---|---|
-| OneBot v11 标准 | 26 | 13% |
-| NapCat | 187 | 91% |
-| SnowLuma | 169 | 83% |
+| OneBot v11 标准 | 32 | 15% |
+| NapCat | 190 | 90% |
+| SnowLuma | 171 | 81% |
+| LLBot | 21 | 10% |
 
 ::: tip 说明
-- **OneBot v11 标准**：仅统计 26 个公开 API，其余为各协议端扩展
-- **NapCat**：支持插件 206 个 API 中的 187 个，其余 19 个为 SnowLuma 独有或插件扩展
-- **SnowLuma**：支持插件 206 个 API 中的 169 个，其余 37 个为 NapCat 专属或 LLBot 扩展
+- **OneBot v11 标准**：按 `APISource.ONEBOT_V11` 统计 32 个主名 API
+- **NapCat**：支持 190 个主名 API，包含本版本新增的 3 个群管理接口
+- **SnowLuma**：支持 171 个主名 API，包含 `_get_friend_dress` 与 `set_friends_category`
+- **LLBot**：已封装 21 个 LLBot 独有扩展 action
 :::
 
-完整的 action × 三方兼容性矩阵见 [兼容性矩阵](../reference/compatibility-matrix)。
+完整的 action × 四方兼容性矩阵见 [兼容性矩阵](../reference/compatibility-matrix)。

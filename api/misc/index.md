@@ -24,4 +24,4 @@
 | [`llonebot_debug`](./llonebot-debug) | 调试接口 | LLBot | ✓ | ✗ |
 | [`scan_qrcode`](./scan-qrcode) | 扫码登录 | LLBot | ✓ | ✗ |
 | [`get_guild_list`](./get-guild-list) | 获取频道列表 | NapCat+LLBot | ✓ | ✗ |
-| [`send_pb`](./send-pb) | LLBot 发送原始 SSO 包 | LLBot | ✗ | ✗ |
+| [`send_pb`](./send-pb) | LLBot 发送原始 Protobuf 数据 | LLBot | ✗ | ✗ |

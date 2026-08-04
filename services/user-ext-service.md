@@ -431,6 +431,31 @@ result = await service.set_friend_category(user_id=..., category_id=...)
 
 ---
 
+### get_friend_dress
+
+获取指定好友正在使用的个性装扮（SnowLuma 扩展）。
+
+```python
+async def get_friend_dress(self, user_id: int) -> dict[str, Any]:
+```
+
+---
+
+### set_friends_category
+
+按分类 ID 或名称设置好友分类（SnowLuma 扩展）。`category_id` 与 `category_name` 必须恰好提供一个。
+
+```python
+async def set_friends_category(
+    self,
+    uin: int,
+    category_id: int | None = None,
+    category_name: str | None = None,
+) -> dict[str, Any]:
+```
+
+---
+
 ## 相关 API
 
 - [delete_friend](../api/user-ext/delete-friend) — delete_friend API 文档
@@ -446,3 +471,5 @@ result = await service.set_friend_category(user_id=..., category_id=...)
 - [get_profile_like_count](../api/user-ext/get-profile-like-count) — get_profile_like_count API 文档
 - [get_qq_avatar](../api/user-ext/get-qq-avatar) — get_qq_avatar API 文档
 - [set_friend_category](../api/user-ext/set-friend-category) — set_friend_category API 文档
+- [_get_friend_dress](../api/user-ext/get-friend-dress) — 获取好友个性装扮
+- [set_friends_category](../api/user-ext/set-friends-category) — 按分类 ID 或名称设置好友分类

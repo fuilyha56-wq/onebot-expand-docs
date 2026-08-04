@@ -38,6 +38,14 @@ NapCat 在 OneBot v11 标准之外提供了大量扩展 API。OneBot Expand 插�
 | `get_robot_uin_range` | 获取机器人账号范围 | [查看](../api/account/get-robot-uin-range) |
 | `get_friends_with_category` | 获取分类好友列表 | [查看](../api/user-ext/get-friends-with-category) |
 
+### 群操作扩展
+
+| action | 说明 | 插件文档 |
+|---|---|---|
+| `set_group_member_invite_policy` | 设置群成员邀请策略 | [查看](../api/group/set-group-member-invite-policy) |
+| `set_group_member_permissions` | 设置群成员功能权限 | [查看](../api/group/set-group-member-permissions) |
+| `set_group_new_member_history_visibility` | 设置新成员历史消息可见性 | [查看](../api/group/set-group-new-member-history-visibility) |
+
 ### 状态扩展
 
 | action | 说明 | 插件文档 |

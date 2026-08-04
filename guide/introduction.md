@@ -1,6 +1,6 @@
 # 简介
 
-OneBot Expand 是一个 OneBot v11 + NapCat + LLBot 扩展 API 完整封装插件，提供 **205 个 Tool 组件** 和 **23 个 Service 组件**，通过 `onebot_adapter` 调用 NapCat / SnowLuma / LLBot 等协议端的全部扩展能力。
+OneBot Expand v1.0.12 是一个 OneBot v11 + NapCat + LLBot 扩展 API 完整封装插件，提供 **211 个 Tool 组件** 和 **23 个 Service 组件**，通过 `onebot_adapter` 调用 NapCat / SnowLuma / LLBot 等协议端的全部扩展能力。
 
 ## 定位
 
@@ -24,9 +24,9 @@ LLM 调用 → Tool.execute → _call_onebot_api → onebot_adapter → NapCat/S
 
 | 协议端 | 支持 API 数 | 说明 |
 |---|---|---|
-| NapCat | 187 / 205 | 基于 NTQQ 的 Bot 协议端实现 |
-| SnowLuma | 169 / 205 | 基于 NTQQ 的远程协议框架 |
-| LLBot | 20 / 205 | LLBot 扩展协议端 |
+| NapCat | 190 / 211 | 基于 NTQQ 的 Bot 协议端实现 |
+| SnowLuma | 171 / 211 | 基于 NTQQ 的远程协议框架 |
+| LLBot | 21 / 211 | LLBot 扩展协议端 |
 
 ::: tip 提示
 部分 API 为某一方专属（如 NapCat 的在线文件、SnowLuma 的 QQ 空间），调用前请查阅 API 文档的兼容性徽章。

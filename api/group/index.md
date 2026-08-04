@@ -1,6 +1,6 @@
 # 群操作 API
 
-本分类包含 10 个群操作 API，涵盖禁言、踢出、管理、头衔等功能。
+本分类包含 13 个群操作 API，涵盖禁言、踢出、管理、头衔、成员权限与邀请策略等功能。
 
 ## API 列表
 
@@ -16,3 +16,6 @@
 | [`set_group_name`](./set-group-name) | 设置群名 | OB11 | ✓ | ✓ |
 | [`set_group_leave`](./set-group-leave) | 退出群组 | OB11 | ✓ | ✓ |
 | [`set_group_special_title`](./set-group-special-title) | 设置群组专属头衔 | OB11 | ✓ | ✓ |
+| [`set_group_member_invite_policy`](./set-group-member-invite-policy) | 设置群成员邀请策略 | NapCat | ✓ | ✗ |
+| [`set_group_member_permissions`](./set-group-member-permissions) | 设置群成员功能权限 | NapCat | ✓ | ✗ |
+| [`set_group_new_member_history_visibility`](./set-group-new-member-history-visibility) | 设置新成员历史消息可见性 | NapCat | ✓ | ✗ |

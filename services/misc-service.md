@@ -323,6 +323,16 @@ result = await service.send_packet(cmd=..., data=...)
 
 ---
 
+### send_pb
+
+发送原始 Protobuf 数据（LLBot 扩展）。Service 参数 `hex_data` 会映射到协议 wire key `hex`。
+
+```python
+async def send_pb(self, cmd: str, hex_data: str) -> dict[str, Any]:
+```
+
+---
+
 ### handle_quick_operation
 
 go-cqhttp 快速操作（NapCat 与 SnowLuma 均支持）。
@@ -582,6 +592,7 @@ result = await service.get_guild_list()
 - [create_collection](../api/misc/create-collection) — create_collection API 文档
 - [get_collection_list](../api/misc/get-collection-list) — get_collection_list API 文档
 - [send_packet](../api/misc/send-packet) — send_packet API 文档
+- [send_pb](../api/misc/send-pb) — send_pb API 文档
 - [handle_quick_operation](../api/misc/handle-quick-operation) — handle_quick_operation API 文档
 - [get_word_slices](../api/misc/get-word-slices) — get_word_slices API 文档
 - [get_config](../api/misc/get-config) — get_config API 文档

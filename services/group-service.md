@@ -369,6 +369,52 @@ result = await service.set_special_title(group_id=..., user_id=..., special_titl
 
 ---
 
+### set_member_invite_policy
+
+设置群成员邀请好友进群的审核策略。
+
+```python
+async def set_member_invite_policy(
+    self,
+    group_id: str,
+    policy: str,
+) -> dict[str, Any]:
+```
+
+`policy` 可取 `disabled`、`require_approval`、`no_approval` 或 `no_approval_under_100`。
+
+---
+
+### set_member_permissions
+
+设置群成员上传相册、发起临时会话和创建群聊的权限。三个权限参数至少提供一个，未提供的项目保持不变。
+
+```python
+async def set_member_permissions(
+    self,
+    group_id: str,
+    allow_member_upload_album: bool | None = None,
+    allow_member_temporary_session: bool | None = None,
+    allow_member_create_group: bool | None = None,
+) -> dict[str, Any]:
+```
+
+---
+
+### set_new_member_history_visibility
+
+设置新入群成员是否可查看最近聊天记录。
+
+```python
+async def set_new_member_history_visibility(
+    self,
+    group_id: str,
+    visible: bool,
+) -> dict[str, Any]:
+```
+
+---
+
 ## 相关 API
 
 - [set_group_kick](../api/group/set-group-kick) — set_group_kick API 文档
@@ -381,3 +427,6 @@ result = await service.set_special_title(group_id=..., user_id=..., special_titl
 - [set_group_name](../api/group/set-group-name) — set_group_name API 文档
 - [leave](../api/group/set-group-leave) — leave API 文档
 - [set_special_title](../api/group/set-group-special-title) — set_special_title API 文档
+- [set_group_member_invite_policy](../api/group/set-group-member-invite-policy) — 群成员邀请策略
+- [set_group_member_permissions](../api/group/set-group-member-permissions) — 群成员功能权限
+- [set_group_new_member_history_visibility](../api/group/set-group-new-member-history-visibility) — 新成员历史消息可见性

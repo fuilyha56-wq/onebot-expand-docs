@@ -1,6 +1,6 @@
 # LLBot 扩展 API 参考
 
-LLBot 在 OneBot v11 标准 API 之外提供群管理、相册、闪传、账号资料和系统能力扩展。OneBot Expand 已封装其中 **20 个** LLBot 扩展 action，并为历史命名差异保留别名。
+LLBot 在 OneBot v11 标准 API 之外提供群管理、相册、闪传、账号资料和系统能力扩展。OneBot Expand 已封装其中 **21 个** LLBot 独有扩展 action，并为历史命名差异保留别名。
 
 ## LLBot 扩展索引
 
@@ -26,6 +26,7 @@ LLBot 在 OneBot v11 标准 API 之外提供群管理、相册、闪传、账号
 | `llonebot_debug` | 获取 LLBot 调试信息 | [查看](../api/misc/llonebot-debug) |
 | `scan_qrcode` | 扫描二维码 | [查看](../api/misc/scan-qrcode) |
 | `get_guild_list` | 获取频道列表 | [查看](../api/misc/get-guild-list) |
+| `send_pb` | 发送原始 Protobuf 数据 | [查看](../api/misc/send-pb) |
 
 ## 历史别名
 

@@ -1,6 +1,6 @@
 # send_pb
 
-LLBot 扩展：发送原始 SSO 包（pmhq 发包），返回响应 cmd 与 pb hex。
+LLBot 扩展：通过 pmhq 发送原始 Protobuf 数据，返回响应 cmd 与 pb hex。
 
 ## 兼容性
 

@@ -1,6 +1,6 @@
 # 运行时兼容性矩阵
 
-下表列出 OneBot Expand 插件全部 205 个 API 在 OneBot v11、NapCat 与 SnowLuma 三方的运行时兼容性标记。LLBot 不是 NapCat 的等价实现，不能由 NapCat 列推导其支持范围；LLBot 已封装的 20 个扩展 action 与别名对照见 [LLBot 扩展](./llbot)。
+下表列出 OneBot Expand 插件全部 211 个主名 API 在 OneBot v11、NapCat 与 SnowLuma 三方的运行时兼容性标记。LLBot 不是 NapCat 的等价实现，不能由 NapCat 列推导其支持范围；LLBot 已封装的 21 个独有扩展 action 与别名对照见 [LLBot 扩展](./llbot)。
 
 ## 图例
 
@@ -47,6 +47,9 @@
 | `set_group_name` | 设置群名 | ✅ | ✅ | ✅ |
 | `set_group_leave` | 退出群聊 | ✅ | ✅ | ✅ |
 | `set_group_special_title` | 设置专属头衔 | ✅ | ✅ | ✅ |
+| `set_group_member_invite_policy` | 设置群成员邀请策略 | ❌ | 🔶 | ❌ |
+| `set_group_member_permissions` | 设置群成员功能权限 | ❌ | 🔶 | ❌ |
+| `set_group_new_member_history_visibility` | 新成员历史消息可见性 | ❌ | 🔶 | ❌ |
 
 ## 文件操作 (file)
 
@@ -169,13 +172,15 @@
 | `get_unidirectional_friend_list` | 单向好友列表 | ❌ | ✅ | ✅ |
 | `set_qq_profile` | 设置QQ资料 | ❌ | ✅ | ✅ |
 | `set_qq_avatar` | 设置QQ头像 | ❌ | ✅ | ✅ |
-| `set_self_longnick` | 设置个性签名 | ❌ | ✅ | 
+| `set_self_longnick` | 设置个性签名 | ❌ | ✅ | ✅ |
 | `get_profile_like_me` | 获取自身被点赞列表 | ❌ | ✅ | ❌ |
 | `get_profile_like_count` | 获取用户点赞总数 | ❌ | ✅ | ❌ |
 | `get_qq_avatar` | 获取QQ头像URL | ❌ | ✅ | ❌ |
-| `set_friend_category` | 设置好友分类 | ❌ | ✅ | ❌ |✅ |
+| `set_friend_category` | 设置好友分类 | ❌ | ✅ | ❌ |
 | `get_recent_contact` | 最近联系人 | ❌ | ✅ | ✅ |
 | `get_profile_like` | 资料点赞 | ❌ | ✅ | ✅ |
+| `_get_friend_dress` | 获取好友个性装扮 | ❌ | ❌ | 🔶 |
+| `set_friends_category` | 按 ID 或名称设置好友分类 | ❌ | ❌ | 🔶 |
 
 ## 在线状态 (status)
 
@@ -253,7 +258,7 @@
 | `llonebot_debug` | 调试接口 | ❌ | ✅ | ❌ |
 | `scan_qrcode` | 扫码登录 | ❌ | ✅ | ❌ |
 | `get_guild_list` | 获取频道列表 | ❌ | ✅ | ❌ |
-| `send_pb` | LLBot 发送原始 SSO 包 | ❌ | ❌ | ❌ |
+| `send_pb` | LLBot 发送原始 Protobuf 数据 | ❌ | ❌ | ❌ |
 
 ## 闪传 (flash)
 

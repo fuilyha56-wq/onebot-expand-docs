@@ -85,7 +85,7 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/message/' }],
         },
         {
-          text: '群操作 (10)',
+          text: '群操作 (13)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/group/' }],
         },
@@ -125,7 +125,7 @@ export default defineConfig({
           items: [{ text: '概览', link: '/api/request/' }],
         },
         {
-          text: '用户信息扩展 (13)',
+          text: '用户信息扩展 (15)',
           collapsed: true,
           items: [{ text: '概览', link: '/api/user-ext/' }],
         },
